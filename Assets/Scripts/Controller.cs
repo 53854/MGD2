@@ -10,7 +10,7 @@ public class Controller : MonoBehaviour
     public GameObject ui_indicator;
 
     public DialogManager dialogManager;
-
+public Animator PlayerAnim;
     public Vector3 mousePos;
     public Camera mainCamera;
     public Vector3 mousePosWorld;
@@ -34,6 +34,8 @@ public class Controller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        PlayerAnim.SetBool("isWalking", isMoving);
 
         // Wurde die Maustaste gedrückt?
         if (Input.GetMouseButtonDown(0))
@@ -62,7 +64,7 @@ public class Controller : MonoBehaviour
                 print("Name: " + hit.collider.gameObject.tag);
 
                 // Abfrage ob es der Ground ist
-                if (hit.collider.gameObject.tag == "Ground")
+                if (hit.collider.gameObject.tag == "Ground" && !isMoving)
                 {
                     // Position des Spielers verändern
                     //player.transform.position = hit.point;
