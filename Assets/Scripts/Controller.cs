@@ -10,10 +10,10 @@ public class Controller : MonoBehaviour
     public GameObject ui_indicator;
 
     public DialogManager dialogManager;
-public Animator PlayerAnim;
+    public Animator PlayerAnim;
     public Vector3 mousePos;
     public Camera mainCamera;
-    public Vector3 mousePosWorld;
+    public Vector3 mousePosWorld;   
     public Vector2 mousePosWorld2D;
     RaycastHit2D hit;
     public GameObject player;
