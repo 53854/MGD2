@@ -1,0 +1,1514 @@
+fileFormatVersion: 2
+guid: d088eb36564488844934508bdcc7637a
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: b2a9591990af98743ba3ff7cf1000886, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 1
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    isReadable: 0
+    streamingMipmaps: 1
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMasterTextureLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  spriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+  mosaicSpriteImportData: []
+  rigSpriteImportData:
+  - name: fill
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 3840
+      height: 2160
+    spriteID: aeb6869efddb47045a4dcc89517caba1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 4}
+  - name: "Itm_Schl\xFCssel"
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4819
+      y: 6408
+      width: 87
+      height: 50
+    spriteID: e910de9d70a833d459348c5966ca0f87
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 2176, y: 5711}
+  - name: "Itm_Schl\xFCssel's Outer Stroke"
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4808
+      y: 6497
+      width: 97
+      height: 60
+    spriteID: 4b838d8d50883a041b820c00036d4f02
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 2170, y: 5805}
+  - name: "Itm_SchaleDurchw\xFChlt"
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4763
+      y: 3829
+      width: 115
+      height: 73
+    spriteID: d7733b41168a0734a801e8423aa69c23
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 2258, y: 3141}
+  - name: "Itm_SchaleDurchw\xFChlt's Outer Stroke"
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4675
+      y: 6497
+      width: 125
+      height: 83
+    spriteID: 698799747ea9cce479445acfc8178c81
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 2175, y: 5814}
+  - name: Table
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4334
+      y: 6740
+      width: 396
+      height: 240
+    spriteID: e558dd2c3dffd90478806318ca5552a5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1966, y: 6231}
+  - name: Table's Outer Stroke
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4334
+      y: 6134
+      width: 422
+      height: 266
+    spriteID: 6cf51b0b2c5b2d74ea33a14cc06161a4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1979, y: 5638}
+  - name: Couch
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2224
+      y: 7618
+      width: 736
+      height: 460
+    spriteID: 9bd9e6e7c56e5604a8ef27797a41e238
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -184, y: 7112}
+  - name: Couch's Outer Stroke
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 742
+      y: 7618
+      width: 762
+      height: 486
+    spriteID: 27016df36811410499745a694d8c1f65
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -1653, y: 7125}
+  - name: itm_Paket 1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4763
+      y: 3985
+      width: 112
+      height: 69
+    spriteID: 1cfbc5331a80b394094b4ccef3ed2e22
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 3411, y: 3103}
+  - name: itm_Paket 1's Outer Stroke
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4675
+      y: 6588
+      width: 121
+      height: 77
+    spriteID: 9b5501c0897a2af4dbbd4f9c90bb091d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 3327, y: 5710}
+  - name: itm_Lappen
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4763
+      y: 3910
+      width: 122
+      height: 67
+    spriteID: 9667f7868e95479488b697c66c55f696
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 2904, y: 3044}
+  - name: itm_Lappen's Outer Stroke
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4675
+      y: 6408
+      width: 136
+      height: 81
+    spriteID: 9fdb8f26cc881db4ea29b8d34b30cb41
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 2823, y: 5549}
+  - name: Counter
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1512
+      y: 7618
+      width: 704
+      height: 500
+    spriteID: 8b14b759794f2ce4a853103b3c48cfda
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 182, y: 7037}
+  - name: "itm_M\xFClleimerOhneGestank"
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4764
+      y: 6134
+      width: 140
+      height: 192
+    spriteID: 2a514d711a613dc46b5c97fbc87ea1a7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 2729, y: 5446}
+  - name: "itm_M\xFClleimerOhneGestank's Outer Stroke"
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4738
+      y: 6740
+      width: 150
+      height: 202
+    spriteID: cbb12caab5343994c8c4c3ee43eb529c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 2708, y: 6057}
+  - name: Counter's Outer Stroke
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 7618
+      width: 730
+      height: 526
+    spriteID: 5c783ae9950592643a14afe88d302ee5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -1313, y: 7050}
+  - name: Shelf
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 5568
+      y: 885
+      width: 732
+      height: 189
+    spriteID: 201a693e7dd08c84794b7722ce16fb8a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4270, y: -143}
+  - name: Shelf's Outer Stroke
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 5568
+      y: 662
+      width: 758
+      height: 215
+    spriteID: 14d1f2e61655f1d42a6e5b00c9a09a60
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4283, y: -353}
+  - name: Couch 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 5568
+      y: 346
+      width: 750
+      height: 308
+    spriteID: 9f2431cebf030f941b7128c2df183822
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 2502, y: -1106}
+  - name: Couch 2's Outer Stroke
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 5568
+      y: 4
+      width: 776
+      height: 334
+    spriteID: ef3d143ff01fc204a933b85cb89259f5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 2515, y: -1435}
+  - name: WeitzObama.png
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4334
+      y: 1888
+      width: 462
+      height: 654
+    spriteID: 897bf7e623fdd6a44ba7835022a3447e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 3709, y: 1236}
+  - name: WeitzObama.png's Outer Stroke
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4334
+      y: 615
+      width: 488
+      height: 680
+    spriteID: 3f30a74ab7fe39f47bf4afb58b11eadf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 3722, y: -24}
+  - name: Bas Reliigion
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4334
+      y: 5632
+      width: 370
+      height: 494
+    spriteID: 19c8cf691532b1a42b8188671574be4a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 2188, y: 4059}
+  - name: Bas Reliigion's Outer Stroke
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4334
+      y: 4732
+      width: 398
+      height: 520
+    spriteID: d18c56c2a25721e4e805743957174b18
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 2202, y: 3172}
+  - name: Social Distortion
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4334
+      y: 3829
+      width: 421
+      height: 497
+    spriteID: 0c7f063285f496247a54c2d3d7684dff
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 2835, y: 2257}
+  - name: Social Distortion's Outer Stroke
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4334
+      y: 2550
+      width: 449
+      height: 524
+    spriteID: 6d8c6951d0811984495970637333e0bd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 2849, y: 992}
+  - name: Sex Pistols
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4334
+      y: 5260
+      width: 503
+      height: 364
+    spriteID: 22b3fc57af5a68c4e8dc744b27079bad
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 3520, y: 3688}
+  - name: Sex Pistols's Outer Stroke
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4334
+      y: 4334
+      width: 531
+      height: 390
+    spriteID: 6a03f868fe8c87348824324c8051e11e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 3534, y: 2775}
+  - name: NoStageDiving
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4334
+      y: 6988
+      width: 307
+      height: 298
+    spriteID: 0c8d5e4b01223e1458ed176ecff338f2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 3967, y: 5234}
+  - name: NoStageDiving's Outer Stroke
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4334
+      y: 6408
+      width: 333
+      height: 324
+    spriteID: 02fedbcf052c55a479d3757312874da0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 3980, y: 4667}
+  - name: Window
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4334
+      y: 1303
+      width: 554
+      height: 577
+    spriteID: 931363e387341524b8b7414ecec566fb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1731, y: 541}
+  - name: Window's Outer Stroke
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4334
+      y: 4
+      width: 581
+      height: 603
+    spriteID: f7a97791a4e984848ac45c427ef9be5d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1745, y: -745}
+  - name: StPauliPride
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4923
+      y: 4
+      width: 637
+      height: 471
+    spriteID: 114c73249ad359345a4b49ead8bc7ea7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1870, y: -1664}
+  - name: StPauliPride's Outer Stroke
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2968
+      y: 7618
+      width: 663
+      height: 497
+    spriteID: c010003b940a6d545a0d851415b29da3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -72, y: 5963}
+  - name: UnisexToilet
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4640
+      y: 3082
+      width: 272
+      height: 713
+    spriteID: 7a40756da8a91d349b1bf0b0b3f086b5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4392, y: 2516}
+  - name: UnisexToilet's Outer Stroke
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4334
+      y: 3082
+      width: 298
+      height: 739
+    spriteID: 6e99a85cb144e904896368807fb2183c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4099, y: 2529}
+  - name: Door
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3852
+      y: 876
+      width: 448
+      height: 838
+    spriteID: 7c5cd1ed62c28f54b8633f3b946605b1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 484, y: 464}
+  - name: Door's Outer Stroke
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3852
+      y: 4
+      width: 474
+      height: 864
+    spriteID: b9e4a53ab08310149b8027be3f1fceea
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 497, y: -395}
+  - name: Platform
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 5401
+      width: 3840
+      height: 1452
+    spriteID: 05a14564999966940bc3548436ca93fa
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 5401}
+  - name: Platform's Outer Stroke
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 3928
+      width: 3840
+      height: 1465
+    spriteID: 47ce56f429dbbe94ca985b5ff1a48426
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 3928}
+  - name: Floor
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 6861
+      width: 3840
+      height: 749
+    spriteID: 449d936091bac1e4b84262e5daf1d570
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 6861}
+  - name: AdobeStock_259383781's Color Fill
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2172
+      width: 3840
+      height: 1748
+    spriteID: bb2639520fc973d4a86643ac26895126
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 1760}
+  characterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+    boneReadOnly: 0
+  sharedRigSpriteImportData: []
+  sharedRigCharacterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+    boneReadOnly: 0
+  platformSettings: []
+  mosaicLayers: 1
+  characterMode: 1
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 7
+  importHiddenLayers: 0
+  layerMappingOption: 2
+  generatePhysicsShape: 0
+  paperDollMode: 0
+  keepDupilcateSpriteName: 1
+  skeletonAssetReferenceID: 
+  spriteCategoryList:
+    categories: []
+  spritePackingTag: 
+  resliceFromLayer: 0
+  mosaicPSDLayers: []
+  rigPSDLayers:
+  - name: fill
+    spriteName: fill
+    isGroup: 0
+    parentIndex: -1
+    spriteID: aeb6869efddb47045a4dcc89517caba1
+    layerID: 0
+    mosaicPosition: {x: 4, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Sitzecke
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 00000000000000000000000000000000
+    layerID: 1804235196
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: "Itm_Schl\xFCssel"
+    spriteName: "Itm_Schl\xFCssel"
+    isGroup: 0
+    parentIndex: 1
+    spriteID: e910de9d70a833d459348c5966ca0f87
+    layerID: -648893876
+    mosaicPosition: {x: 4819, y: 6408}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: "Itm_Schl\xFCssel's Outer Stroke"
+    spriteName: "Itm_Schl\xFCssel's Outer Stroke"
+    isGroup: 0
+    parentIndex: 1
+    spriteID: 4b838d8d50883a041b820c00036d4f02
+    layerID: -606699969
+    mosaicPosition: {x: 4808, y: 6497}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: "Itm_SchaleDurchw\xFChlt"
+    spriteName: "Itm_SchaleDurchw\xFChlt"
+    isGroup: 0
+    parentIndex: 1
+    spriteID: d7733b41168a0734a801e8423aa69c23
+    layerID: 2045438556
+    mosaicPosition: {x: 4763, y: 3829}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: "Itm_SchaleDurchw\xFChlt's Outer Stroke"
+    spriteName: "Itm_SchaleDurchw\xFChlt's Outer Stroke"
+    isGroup: 0
+    parentIndex: 1
+    spriteID: 698799747ea9cce479445acfc8178c81
+    layerID: -1072570459
+    mosaicPosition: {x: 4675, y: 6497}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Table
+    spriteName: Table
+    isGroup: 0
+    parentIndex: 1
+    spriteID: e558dd2c3dffd90478806318ca5552a5
+    layerID: 593506430
+    mosaicPosition: {x: 4334, y: 6740}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Table's Outer Stroke
+    spriteName: Table's Outer Stroke
+    isGroup: 0
+    parentIndex: 1
+    spriteID: 6cf51b0b2c5b2d74ea33a14cc06161a4
+    layerID: 365424203
+    mosaicPosition: {x: 4334, y: 6134}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Couch
+    spriteName: Couch
+    isGroup: 0
+    parentIndex: 1
+    spriteID: 9bd9e6e7c56e5604a8ef27797a41e238
+    layerID: 795264200
+    mosaicPosition: {x: 2224, y: 7618}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Couch's Outer Stroke
+    spriteName: Couch's Outer Stroke
+    isGroup: 0
+    parentIndex: 1
+    spriteID: 27016df36811410499745a694d8c1f65
+    layerID: 1017009067
+    mosaicPosition: {x: 742, y: 7618}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Bar
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 00000000000000000000000000000000
+    layerID: 696030473
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: itm_Paket 1
+    spriteName: itm_Paket 1
+    isGroup: 0
+    parentIndex: 10
+    spriteID: 1cfbc5331a80b394094b4ccef3ed2e22
+    layerID: -570835983
+    mosaicPosition: {x: 4763, y: 3985}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: itm_Paket 1's Outer Stroke
+    spriteName: itm_Paket 1's Outer Stroke
+    isGroup: 0
+    parentIndex: 10
+    spriteID: 9b5501c0897a2af4dbbd4f9c90bb091d
+    layerID: 1241131870
+    mosaicPosition: {x: 4675, y: 6588}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: itm_Lappen
+    spriteName: itm_Lappen
+    isGroup: 0
+    parentIndex: 10
+    spriteID: 9667f7868e95479488b697c66c55f696
+    layerID: 1921094605
+    mosaicPosition: {x: 4763, y: 3910}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: itm_Lappen's Outer Stroke
+    spriteName: itm_Lappen's Outer Stroke
+    isGroup: 0
+    parentIndex: 10
+    spriteID: 9fdb8f26cc881db4ea29b8d34b30cb41
+    layerID: 327446134
+    mosaicPosition: {x: 4675, y: 6408}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Counter
+    spriteName: Counter
+    isGroup: 0
+    parentIndex: 10
+    spriteID: 8b14b759794f2ce4a853103b3c48cfda
+    layerID: -655385798
+    mosaicPosition: {x: 1512, y: 7618}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: "itm_M\xFClleimerMitGestank"
+    spriteName: 
+    isGroup: 0
+    parentIndex: 10
+    spriteID: 00000000000000000000000000000000
+    layerID: -1811418543
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: "itm_M\xFClleimerOhneGestank"
+    spriteName: "itm_M\xFClleimerOhneGestank"
+    isGroup: 0
+    parentIndex: 10
+    spriteID: 2a514d711a613dc46b5c97fbc87ea1a7
+    layerID: 1093449641
+    mosaicPosition: {x: 4764, y: 6134}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: "itm_M\xFClleimerOhneGestank's Outer Stroke"
+    spriteName: "itm_M\xFClleimerOhneGestank's Outer Stroke"
+    isGroup: 0
+    parentIndex: 10
+    spriteID: cbb12caab5343994c8c4c3ee43eb529c
+    layerID: 886186546
+    mosaicPosition: {x: 4738, y: 6740}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Counter's Outer Stroke
+    spriteName: Counter's Outer Stroke
+    isGroup: 0
+    parentIndex: 10
+    spriteID: 5c783ae9950592643a14afe88d302ee5
+    layerID: -1263067859
+    mosaicPosition: {x: 4, y: 7618}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Shelf
+    spriteName: Shelf
+    isGroup: 0
+    parentIndex: 10
+    spriteID: 201a693e7dd08c84794b7722ce16fb8a
+    layerID: 1131308474
+    mosaicPosition: {x: 5568, y: 885}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Shelf's Outer Stroke
+    spriteName: Shelf's Outer Stroke
+    isGroup: 0
+    parentIndex: 10
+    spriteID: 14d1f2e61655f1d42a6e5b00c9a09a60
+    layerID: -1668724819
+    mosaicPosition: {x: 5568, y: 662}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: BG
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 00000000000000000000000000000000
+    layerID: 428224017
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Couch 2
+    spriteName: Couch 2
+    isGroup: 0
+    parentIndex: 22
+    spriteID: 9f2431cebf030f941b7128c2df183822
+    layerID: -951006666
+    mosaicPosition: {x: 5568, y: 346}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Couch 2's Outer Stroke
+    spriteName: Couch 2's Outer Stroke
+    isGroup: 0
+    parentIndex: 22
+    spriteID: ef3d143ff01fc204a933b85cb89259f5
+    layerID: 406452473
+    mosaicPosition: {x: 5568, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Posters etc.
+    spriteName: 
+    isGroup: 1
+    parentIndex: 22
+    spriteID: 00000000000000000000000000000000
+    layerID: 296988420
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: WeitzObama.png
+    spriteName: WeitzObama.png
+    isGroup: 0
+    parentIndex: 25
+    spriteID: 897bf7e623fdd6a44ba7835022a3447e
+    layerID: 1567254090
+    mosaicPosition: {x: 4334, y: 1888}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: WeitzObama.png's Outer Stroke
+    spriteName: WeitzObama.png's Outer Stroke
+    isGroup: 0
+    parentIndex: 25
+    spriteID: 3f30a74ab7fe39f47bf4afb58b11eadf
+    layerID: -440031309
+    mosaicPosition: {x: 4334, y: 615}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Bas Reliigion
+    spriteName: Bas Reliigion
+    isGroup: 0
+    parentIndex: 25
+    spriteID: 19c8cf691532b1a42b8188671574be4a
+    layerID: 791369316
+    mosaicPosition: {x: 4334, y: 5632}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Bas Reliigion's Outer Stroke
+    spriteName: Bas Reliigion's Outer Stroke
+    isGroup: 0
+    parentIndex: 25
+    spriteID: d18c56c2a25721e4e805743957174b18
+    layerID: 844998433
+    mosaicPosition: {x: 4334, y: 4732}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Social Distortion
+    spriteName: Social Distortion
+    isGroup: 0
+    parentIndex: 25
+    spriteID: 0c7f063285f496247a54c2d3d7684dff
+    layerID: 2101403608
+    mosaicPosition: {x: 4334, y: 3829}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Social Distortion's Outer Stroke
+    spriteName: Social Distortion's Outer Stroke
+    isGroup: 0
+    parentIndex: 25
+    spriteID: 6d8c6951d0811984495970637333e0bd
+    layerID: 760873957
+    mosaicPosition: {x: 4334, y: 2550}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Sex Pistols
+    spriteName: Sex Pistols
+    isGroup: 0
+    parentIndex: 25
+    spriteID: 22b3fc57af5a68c4e8dc744b27079bad
+    layerID: -132221690
+    mosaicPosition: {x: 4334, y: 5260}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Sex Pistols's Outer Stroke
+    spriteName: Sex Pistols's Outer Stroke
+    isGroup: 0
+    parentIndex: 25
+    spriteID: 6a03f868fe8c87348824324c8051e11e
+    layerID: -1284843399
+    mosaicPosition: {x: 4334, y: 4334}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: NoStageDiving
+    spriteName: NoStageDiving
+    isGroup: 0
+    parentIndex: 25
+    spriteID: 0c8d5e4b01223e1458ed176ecff338f2
+    layerID: 1811252500
+    mosaicPosition: {x: 4334, y: 6988}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: NoStageDiving's Outer Stroke
+    spriteName: NoStageDiving's Outer Stroke
+    isGroup: 0
+    parentIndex: 25
+    spriteID: 02fedbcf052c55a479d3757312874da0
+    layerID: -239178745
+    mosaicPosition: {x: 4334, y: 6408}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Window
+    spriteName: Window
+    isGroup: 0
+    parentIndex: 25
+    spriteID: 931363e387341524b8b7414ecec566fb
+    layerID: -1771839954
+    mosaicPosition: {x: 4334, y: 1303}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Window's Outer Stroke
+    spriteName: Window's Outer Stroke
+    isGroup: 0
+    parentIndex: 25
+    spriteID: f7a97791a4e984848ac45c427ef9be5d
+    layerID: -1439220123
+    mosaicPosition: {x: 4334, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: StPauliPride
+    spriteName: StPauliPride
+    isGroup: 0
+    parentIndex: 25
+    spriteID: 114c73249ad359345a4b49ead8bc7ea7
+    layerID: 1648529292
+    mosaicPosition: {x: 4923, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: StPauliPride's Outer Stroke
+    spriteName: StPauliPride's Outer Stroke
+    isGroup: 0
+    parentIndex: 25
+    spriteID: c010003b940a6d545a0d851415b29da3
+    layerID: -562744203
+    mosaicPosition: {x: 2968, y: 7618}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: UnisexToilet
+    spriteName: UnisexToilet
+    isGroup: 0
+    parentIndex: 22
+    spriteID: 7a40756da8a91d349b1bf0b0b3f086b5
+    layerID: -317345353
+    mosaicPosition: {x: 4640, y: 3082}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: UnisexToilet's Outer Stroke
+    spriteName: UnisexToilet's Outer Stroke
+    isGroup: 0
+    parentIndex: 22
+    spriteID: 6e99a85cb144e904896368807fb2183c
+    layerID: 1821742128
+    mosaicPosition: {x: 4334, y: 3082}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Door
+    spriteName: Door
+    isGroup: 0
+    parentIndex: 22
+    spriteID: 7c5cd1ed62c28f54b8633f3b946605b1
+    layerID: -1670867770
+    mosaicPosition: {x: 3852, y: 876}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Door's Outer Stroke
+    spriteName: Door's Outer Stroke
+    isGroup: 0
+    parentIndex: 22
+    spriteID: b9e4a53ab08310149b8027be3f1fceea
+    layerID: 1390169039
+    mosaicPosition: {x: 3852, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Platform
+    spriteName: Platform
+    isGroup: 0
+    parentIndex: 22
+    spriteID: 05a14564999966940bc3548436ca93fa
+    layerID: 1086556859
+    mosaicPosition: {x: 4, y: 5401}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Platform's Outer Stroke
+    spriteName: Platform's Outer Stroke
+    isGroup: 0
+    parentIndex: 22
+    spriteID: 47ce56f429dbbe94ca985b5ff1a48426
+    layerID: -990447116
+    mosaicPosition: {x: 4, y: 3928}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Floor
+    spriteName: Floor
+    isGroup: 0
+    parentIndex: 22
+    spriteID: 449d936091bac1e4b84262e5daf1d570
+    layerID: 1776489660
+    mosaicPosition: {x: 4, y: 6861}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: AdobeStock_259383781's Color Fill
+    spriteName: AdobeStock_259383781's Color Fill
+    isGroup: 0
+    parentIndex: 22
+    spriteID: bb2639520fc973d4a86643ac26895126
+    layerID: -1613623902
+    mosaicPosition: {x: 4, y: 2172}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  sharedRigPSDLayers: []
+  pSDLayerImportSetting: []
+  generateGOHierarchy: 0
+  textureAssetName: 
+  prefabAssetName: 
+  spriteLibAssetName: 
+  skeletonAssetName: 
+  secondarySpriteTextures: []
