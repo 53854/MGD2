@@ -13,16 +13,18 @@ public class Controller : MonoBehaviour
     public Animator PlayerAnim;
     public Vector3 mousePos;
     public Camera mainCamera;
-    public Vector3 mousePosWorld;   
+    public Vector3 mousePosWorld;
     public Vector2 mousePosWorld2D;
     RaycastHit2D hit;
     public GameObject player;
     public Vector2 targetPos;
-    public float playerOffset;
+    [Range(0.0f, 3.0f)]
+    public float scale = 2.0f;
     public float speed;
     public bool isMoving;
+    public bool isInteracting = false;
 
-    public bool key = false;
+    public List<GameObject> hasInteracted;
     public int stones = 0;
 
     // Use this for initialization
@@ -37,71 +39,48 @@ public class Controller : MonoBehaviour
 
         PlayerAnim.SetBool("isWalking", isMoving);
 
-        // Wurde die Maustaste gedrückt?
-        if (Input.GetMouseButtonDown(0))
-        {
-            // Maustaste wurde erkannt
-            print("Maustaste wurde gedrückt");
-            // Mausposition auslesen
-            mousePos = Input.mousePosition;
-            // Mausposition auf Konsole ausgeben
-            print("Screen Space: " + mousePos);
-            // Koordinaten von Screen Space nach World Space umwandeln
-            mousePosWorld = mainCamera.ScreenToWorldPoint(mousePos);
-            // World Space Koordinaten auf Unity Konsole ausgeben
-            print("World Space: " + mousePosWorld);
-            // Umwandlung von Vector3 in Vector 2
-            mousePosWorld2D = new Vector2(mousePosWorld.x, mousePosWorld.y);
 
-            // Raycast2D => Hit abspeichern
+        if (Input.GetMouseButtonDown(0) && dialogManager.state == State.Deactivate)
+        {
+
+            mousePos = Input.mousePosition;
+
+            mousePosWorld = mainCamera.ScreenToWorldPoint(mousePos);
+
+            mousePosWorld2D = new Vector2(mousePosWorld.x, mousePosWorld.y);
             hit = Physics2D.Raycast(mousePosWorld2D, Vector2.zero);
 
-            // Überprüfe ob hit einen Collider beinhaltet
+
             if (hit.collider != null)
             {
-                print("Objekt mit Collider wurde getroffen!");
-                // Ausgabe des getroffenen game objects (name)
                 print("Name: " + hit.collider.gameObject.tag);
 
+                GameObject hitObject = hit.collider.gameObject;
+                string tag = hitObject.tag;
+
                 // Abfrage ob es der Ground ist
-                if (hit.collider.gameObject.tag == "Ground" && !isMoving)
+                if (tag == "Ground" && !isMoving)
                 {
-                    // Position des Spielers verändern
-                    //player.transform.position = hit.point;
-                    targetPos = hit.point + Vector2.up * playerOffset;
-                    // isMoving wahr, damit sich Spieler bewegt
+                    targetPos = hit.point;
                     isMoving = true;
-                    // Überprüfe ob Sprite-Flip notwendig ist
+                    isInteracting = false;
                     CheckSpriteFlip();
                 }
                 // Abfrage ob es der Schlüssel ist
-                else if(hit.collider.gameObject.tag == "Collectable")
+                else if (tag == "Interactable")
                 {
-
-                    DialogData dialogData = new DialogData("this is a key...", "zombie");
-                    dialogManager.Show(dialogData);
-
-                    // Es ist der Schlüssel
-                    // Grafik deaktivieren
-                    hit.collider.gameObject.SetActive(false);
-                    ui_indicator.SetActive(true);
-                    // Schlüssel im Skript abspeichern
-                    key = true;
-                    // Anzahl der Steine um 1 erhöhen
-                    stones = stones + 1;
+                    targetPos = hitObject.GetComponent<Interactable>().interActionPoint.position;
+                    isInteracting = true;
+                    dialogManager.Show(hitObject.GetComponent<Interactable>().GetDialogData());
                 }
-                // Abfrage ob es die Tür ist
-                else if(hit.collider.gameObject.tag == "Character")
+                else if (tag == "Character")
                 {
-                    DialogData newText = new DialogData("wow, you found the key", "other");
-                    if(!key){
-                        newText = new DialogData("you need to find the key first", "other");
-                    }
-                    dialogManager.Show(newText);
+                    dialogManager.Show(hitObject.GetComponent<NPC>().GetDialogData());
                 }
             }
             else
             {
+                isInteracting = false;
                 print("Kein Collider erkannt!");
             }
         }
@@ -109,26 +88,30 @@ public class Controller : MonoBehaviour
 
     private void FixedUpdate()
     {
-        // Überprüfe ob Spieler sich bewegt?
-        if(isMoving && dialogManager.state == State.Deactivate)
-        {
-            // Spieler an Zielort befördern
-            player.transform.position = Vector3.MoveTowards(player.transform.position, targetPos, speed);
-            print("Spieler wird bewegt");
 
-            // Ist der Spieler am Zielort?
-            if(player.transform.position.x == targetPos.x && player.transform.position.y == targetPos.y)
+        if (isMoving && dialogManager.state == State.Deactivate)
+        {
+
+            if (player.transform.position.y < 25)
             {
-                // Spieler am Zielort => isMoving "deaktivieren"
+                float y_scale = 34 / (player.transform.position.y + 17);
+                player.transform.localScale = new Vector3(y_scale, y_scale, y_scale);
+            }
+
+            
+
+            player.transform.position = Vector3.MoveTowards(player.transform.position, targetPos, speed);
+            CheckSpriteFlip();
+            if (player.transform.position.x == targetPos.x && player.transform.position.y == targetPos.y)
+            {
                 isMoving = false;
-                print("Spieler am Zielort");
             }
         }
     }
 
     void CheckSpriteFlip()
     {
-        if(player.transform.position.x > targetPos.x)
+        if (player.transform.position.x > targetPos.x)
         {
             // Nach links blicken
             player.GetComponent<SpriteRenderer>().flipX = true;

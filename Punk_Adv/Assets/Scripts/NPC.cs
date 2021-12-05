@@ -36,10 +36,11 @@ public struct dialogElement
 {
     public string text;
     public string speaker;
+    public AudioClip audio;
     
-    public dialogElement(string text, string speaker)
-    {
+    public dialogElement(string text, string speaker, AudioClip audio){
         this.text = text;
         this.speaker = speaker;
+        this.audio = audio;
     }
 }
