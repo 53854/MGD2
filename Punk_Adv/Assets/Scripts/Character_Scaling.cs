@@ -9,10 +9,10 @@ public class Character_Scaling : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (transform.position.y < 25)
+        if (transform.position.y < 10.5f)
         {
-            float y_scale = 34 / (transform.position.y + 17);
-            transform.localScale = new Vector3(y_scale, y_scale, y_scale);
+            float y_scale = 21f / (transform.position.y + 10.5f);
+            transform.localScale = new Vector3(y_scale, y_scale, y_scale) * scale;
         }
     }
 }

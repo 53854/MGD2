@@ -16,6 +16,9 @@ public class Controller : MonoBehaviour
     public Vector3 mousePosWorld;
     public Vector2 mousePosWorld2D;
     RaycastHit2D hit;
+
+    
+
     public GameObject player;
     public Vector2 targetPos;
     [Range(0.0f, 3.0f)]
@@ -53,8 +56,6 @@ public class Controller : MonoBehaviour
 
             if (hit.collider != null)
             {
-                print("Name: " + hit.collider.gameObject.tag);
-
                 GameObject hitObject = hit.collider.gameObject;
                 string tag = hitObject.tag;
 
@@ -81,27 +82,29 @@ public class Controller : MonoBehaviour
             else
             {
                 isInteracting = false;
-                print("Kein Collider erkannt!");
             }
         }
+    
     }
 
     private void FixedUpdate()
     {
-
+        // Player movement and scaling
         if (isMoving && dialogManager.state == State.Deactivate)
         {
-
+            
+            // Scale Player according to y position 
             if (player.transform.position.y < 25)
             {
                 float y_scale = 34 / (player.transform.position.y + 17);
                 player.transform.localScale = new Vector3(y_scale, y_scale, y_scale);
             }
 
-            
-
+            // Move Player and flip the visual representation if he is facing left
             player.transform.position = Vector3.MoveTowards(player.transform.position, targetPos, speed);
             CheckSpriteFlip();
+
+            // Stop moving if player is close enough to taget position
             if (player.transform.position.x == targetPos.x && player.transform.position.y == targetPos.y)
             {
                 isMoving = false;

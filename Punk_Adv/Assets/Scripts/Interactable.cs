@@ -5,12 +5,14 @@ using Doublsb.Dialog;
 
 public class Interactable : MonoBehaviour
 {
-    public string name = "Interactable";
+    public string itemName = "Interactable";
     public string description = "This is an interactable object.";
     public bool canBePickedUp = false;
     public bool canBeUsed = false;
     public bool hasBeenClicked = false;
-    public string displayText = "";
+    public SpriteRenderer outLine = null;
+    public Sprite onClickSprite = null;
+    public string displayText = "Wow... I wonder what this is...";
 
     
 
@@ -36,4 +38,31 @@ public class Interactable : MonoBehaviour
     public Sprite GetSprite(){
         return GetComponent<SpriteRenderer>().sprite;
     }
+
+
+    private void OnMouseEnter() {
+        if(outLine != null)
+        {
+            outLine.color = Color.green;
+        }
+    }
+
+    private void OnMouseExit() {
+        if(outLine != null)
+        {
+            outLine.color = Color.white;
+        }
+    }
+
+    private void OnMouseDown() {
+        hasBeenClicked = true;
+        Debug.Log("clicked: " + itemName);
+        if(onClickSprite != null)
+        {
+            GetComponent<SpriteRenderer>().sprite = onClickSprite;
+        }
+    }
+
+    
+
 }
