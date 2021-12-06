@@ -3,7 +3,7 @@
 [Oo]bj/
 [Ll]ogs/
 Logs/
-ProjectSettings/
+#ProjectSettings/
 UserSettings/
 Assets/AssetStoreTools*
 
@@ -39,3 +39,4 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+*.app
