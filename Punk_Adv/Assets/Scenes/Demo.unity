@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311915, g: 0.3807396, b: 0.35872662, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311992, g: 0.38074034, b: 0.35872713, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -708,6 +708,58 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1318904331666363271, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1318904331666363271, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[0].text
+      value: Will nicht wissen, was damit schon alles aufgewischt wurde.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1318904331666363271, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[1].text
+      value: ...
+      objectReference: {fileID: 0}
+    - target: {fileID: 1318904331666363271, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[2].text
+      value: '*sniff sniff*'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1318904331666363271, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[0].speaker
+      value: Protag-Kun
+      objectReference: {fileID: 0}
+    - target: {fileID: 1318904331666363271, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[1].speaker
+      value: Protag-Kun
+      objectReference: {fileID: 0}
+    - target: {fileID: 1318904331666363271, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[2].speaker
+      value: Protag-Kun
+      objectReference: {fileID: 0}
+    - target: {fileID: 1318904331666363271, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[0].isPlayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1318904331666363271, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[1].isPlayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1318904331666363271, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[2].isPlayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1318904331666363271, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[0].isSkippable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1318904331666363271, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[1].isSkippable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1318904331666363271, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[2].isSkippable
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1498717733565854976, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
       propertyPath: lines.Array.size
       value: 2
@@ -730,6 +782,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1498717733565854976, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
       propertyPath: lines.Array.data[1].isSkippable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2446340237759762944, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2446340237759762944, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[0].text
+      value: ...or what?
+      objectReference: {fileID: 0}
+    - target: {fileID: 2446340237759762944, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[0].speaker
+      value: Protag-Kun
+      objectReference: {fileID: 0}
+    - target: {fileID: 2446340237759762944, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[0].isPlayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2446340237759762944, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[0].isSkippable
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2836654548923944529, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
@@ -779,6 +851,59 @@ PrefabInstance:
     - target: {fileID: 4005331317302548018, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
       propertyPath: m_Name
       value: World
+      objectReference: {fileID: 0}
+    - target: {fileID: 4204452211206588837, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4204452211206588837, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[0].text
+      value: "Ich frage mich immer noch, wer blo\xDF dieser charismatische Mann ist."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4204452211206588837, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[1].text
+      value: "Hank erz\xE4hlt nicht viel \xFCber ihn, au\xDFer, dass er eine Legende
+        zu seinen Lebzeiten war."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4204452211206588837, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[2].text
+      value: "...und was hat es blo\xDF mit der 42 auf sich?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4204452211206588837, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[0].speaker
+      value: Protag-Kun
+      objectReference: {fileID: 0}
+    - target: {fileID: 4204452211206588837, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[1].speaker
+      value: Protag-Kun
+      objectReference: {fileID: 0}
+    - target: {fileID: 4204452211206588837, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[2].speaker
+      value: Protag-Kun
+      objectReference: {fileID: 0}
+    - target: {fileID: 4204452211206588837, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[0].isPlayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4204452211206588837, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[1].isPlayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4204452211206588837, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[2].isPlayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4204452211206588837, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[0].isSkippable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4204452211206588837, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[1].isSkippable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4204452211206588837, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[2].isSkippable
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8269625325746355363, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
       propertyPath: m_TagString
