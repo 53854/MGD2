@@ -6,29 +6,27 @@ using Doublsb.Dialog;
 
 public class Controller : MonoBehaviour
 {
-
-    public GameObject ui_indicator;
-
+    [Header("Scene Reference")]
     public DialogManager dialogManager;
-    public Animator PlayerAnim;
-    public Vector3 mousePos;
-    public Camera mainCamera;
-    public Vector3 mousePosWorld;
-    public Vector2 mousePosWorld2D;
-    RaycastHit2D hit;
-
+    public GameObject player;
     
 
-    public GameObject player;
-    public Vector2 targetPos;
+    [Header("MouseCoords")]
+    public Vector3 mousePos;
+    public Vector3 mousePosWorld;
+    public Vector2 mousePosWorld2D;
+
+
+    [Header("Movement")]
     [Range(0.0f, 3.0f)]
     public float scale = 2.0f;
+    [Range(0.0f, 3.0f)]
     public float speed;
     public bool isMoving;
     public bool isInteracting = false;
-
-    public List<GameObject> hasInteracted;
-    public int stones = 0;
+    public Vector2 targetPos;
+    
+    RaycastHit2D hit;
 
     // Use this for initialization
     void Start()
@@ -40,15 +38,17 @@ public class Controller : MonoBehaviour
     void Update()
     {
 
-        PlayerAnim.SetBool("isWalking", isMoving);
+        player.GetComponent<Animator>().SetBool("isWalking", isMoving);
 
+
+        Debug.Log(dialogManager.state);
 
         if (Input.GetMouseButtonDown(0) && dialogManager.state == State.Deactivate)
         {
 
             mousePos = Input.mousePosition;
 
-            mousePosWorld = mainCamera.ScreenToWorldPoint(mousePos);
+            mousePosWorld = Camera.main.ScreenToWorldPoint(mousePos);
 
             mousePosWorld2D = new Vector2(mousePosWorld.x, mousePosWorld.y);
             hit = Physics2D.Raycast(mousePosWorld2D, Vector2.zero);
@@ -70,9 +70,7 @@ public class Controller : MonoBehaviour
                 // Abfrage ob es der Schlüssel ist
                 else if (tag == "Interactable")
                 {
-                    targetPos = hitObject.GetComponent<Interactable>().interActionPoint.position;
                     isInteracting = true;
-                    dialogManager.Show(hitObject.GetComponent<Interactable>().GetDialogData());
                 }
                 else if (tag == "Character")
                 {
