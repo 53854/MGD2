@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311992, g: 0.38074034, b: 0.35872713, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1811,11 +1811,45 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lines:
-  - text: /sound:haha/haha.
+  - text: Oh, h-hey...
+    isPlayer: 0
+    isSkippable: 1
+    speaker: Ashley
+  - text: Hey, wie geht's dir?
     isPlayer: 1
     isSkippable: 1
     speaker: Protag-Kun
-  alt_lines: []
+  - text: "Gut, danke! Ich habe eben etwas mitgeh\xF6rt, du hast einen Auftrag von
+      Hank bekommen, richtig?"
+    isPlayer: 0
+    isSkippable: 1
+    speaker: Ashley
+  - text: Kann ich dir da irgendwie behilflich sein?
+    isPlayer: 0
+    isSkippable: 1
+    speaker: Ashley
+  - text: Danke, aber keine Sorge, es ist nur ein Lieferauftrag. Ist im Handumdrehen
+      erledigt!
+    isPlayer: 1
+    isSkippable: 1
+    speaker: Protag-Kun
+  - text: "Okay, das h\xF6rt sich doch gut an. Pass trotzdem auf dich auf."
+    isPlayer: 0
+    isSkippable: 1
+    speaker: Ashley
+  - text: Hey, keine Zeit zum flirten! Schwing die Knochen!
+    isPlayer: 0
+    isSkippable: 1
+    speaker: Hank
+  - text: "Wir h\xF6ren uns sp\xE4ter."
+    isPlayer: 0
+    isSkippable: 1
+    speaker: Ashley
+  alt_lines:
+  - text: "Wir h\xF6ren uns sp\xE4ter."
+    isPlayer: 0
+    isSkippable: 1
+    speaker: Ashley
   itemName: Interactable
   description: This is an interactable object.
   callSound: 
