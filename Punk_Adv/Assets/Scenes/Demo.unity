@@ -784,6 +784,58 @@ PrefabInstance:
       propertyPath: lines.Array.data[1].isSkippable
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1970015385695073488, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1970015385695073488, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[0].text
+      value: "Hmm, St.Pauli... niemand hat hier je davon geh\xF6rt."
+      objectReference: {fileID: 0}
+    - target: {fileID: 1970015385695073488, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[1].text
+      value: Stammt das etwa aus Hank's Jugendzeit, so wie der Mann mit der 42?
+      objectReference: {fileID: 0}
+    - target: {fileID: 1970015385695073488, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[2].text
+      value: Moment, wann war eigentlich Hank's Jugendzeit...?
+      objectReference: {fileID: 0}
+    - target: {fileID: 1970015385695073488, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[0].speaker
+      value: Protag-Kun
+      objectReference: {fileID: 0}
+    - target: {fileID: 1970015385695073488, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[1].speaker
+      value: Protag-Kun
+      objectReference: {fileID: 0}
+    - target: {fileID: 1970015385695073488, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[2].speaker
+      value: Protag-Kun
+      objectReference: {fileID: 0}
+    - target: {fileID: 1970015385695073488, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[0].isPlayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1970015385695073488, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[1].isPlayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1970015385695073488, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[2].isPlayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1970015385695073488, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[0].isSkippable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1970015385695073488, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[1].isSkippable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1970015385695073488, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[2].isSkippable
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2446340237759762944, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
       propertyPath: lines.Array.size
       value: 1
