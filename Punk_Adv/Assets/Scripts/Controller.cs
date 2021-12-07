@@ -9,7 +9,6 @@ public class Controller : MonoBehaviour
     [Header("Scene Reference")]
     public DialogManager dialogManager;
     public GameObject player;
-    
 
     [Header("MouseCoords")]
     public Vector3 mousePos;
@@ -25,7 +24,12 @@ public class Controller : MonoBehaviour
     public bool isMoving;
     public bool isInteracting = false;
     public Vector2 targetPos;
-    
+
+    [Header("Inventory")]
+    public bool hasPack = false;
+    public bool hasKey = false;
+
+
     RaycastHit2D hit;
 
     // Use this for initialization
