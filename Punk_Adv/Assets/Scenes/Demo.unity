@@ -227,6 +227,7 @@ MonoBehaviour:
     isPlayer: 1
     isSkippable: 1
     speaker: Protag-Kun
+  alt_lines: []
   itemName: Interactable
   description: This is an interactable object.
   callSound: haha
@@ -795,6 +796,50 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 862770800826743747, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 862770800826743747, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: m_FlipY
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1556047736915762127, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 7.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1556047736915762127, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 3.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 1905680762818431344, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1905680762818431344, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[0].text
+      value: EW... Hier scheint auch nichts zu sein...
+      objectReference: {fileID: 0}
+    - target: {fileID: 1905680762818431344, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[0].speaker
+      value: Protag-Kun
+      objectReference: {fileID: 0}
+    - target: {fileID: 1905680762818431344, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[0].isPlayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1905680762818431344, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[0].isSkippable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2294187364228353116, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2294187364228353116, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1920631189
+      objectReference: {fileID: 0}
     - target: {fileID: 2780095670920957693, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.6600013
@@ -879,6 +924,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3379191869405223159, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: m_SortingOrder
+      value: 33
+      objectReference: {fileID: 0}
     - target: {fileID: 4005331317302548018, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
       propertyPath: m_Name
       value: World
@@ -918,6 +967,22 @@ PrefabInstance:
     - target: {fileID: 6140013948025093398, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: -13.387
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185301436832155602, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -18.21
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185301436832155602, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.27
+      objectReference: {fileID: 0}
+    - target: {fileID: 8796020189441202270, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8796020189441202270, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1920631189
       objectReference: {fileID: 0}
     - target: {fileID: 9084851522558343243, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
       propertyPath: m_Volume
@@ -1315,6 +1380,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1333858324 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 360686899612311229, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+  m_PrefabInstance: {fileID: 397283217}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &1333858328
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1333858324}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.4, y: 1.92}
+    newSize: {x: 1.4, y: 1.92}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.4, y: 1.92}
+  m_EdgeRadius: 0
 --- !u!1 &1459828191
 GameObject:
   m_ObjectHideFlags: 0
@@ -1719,6 +1815,7 @@ MonoBehaviour:
     isPlayer: 1
     isSkippable: 1
     speaker: Protag-Kun
+  alt_lines: []
   itemName: Interactable
   description: This is an interactable object.
   callSound: 

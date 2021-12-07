@@ -7,11 +7,12 @@ public class Interactable : MonoBehaviour
 {
 
     public List<textLine> lines;
+    public List<textLine> alt_lines;
     public string itemName = "Interactable";
     public string description = "This is an interactable object.";
 
     public string callSound = "";
-
+    
     public bool canBePickedUp = false;
     [HideInInspector]
     public bool canBeUsed = false;
@@ -92,6 +93,11 @@ public class Interactable : MonoBehaviour
         if (dialog.Count > 0) dialog.Clear();
         else
         {
+
+            if(alt_lines.Count == 0) alt_lines = lines;
+
+            List<textLine> temp = hasBeenClicked? alt_lines : lines;
+
             foreach (textLine line in lines)
             {
                 dialog.Add(new DialogData(line.text, line.speaker, null, line.isSkippable));
