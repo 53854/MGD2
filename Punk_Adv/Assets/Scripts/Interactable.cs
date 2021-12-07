@@ -4,8 +4,8 @@ using UnityEngine;
 using Doublsb.Dialog;
 
 public class Interactable : MonoBehaviour
-{   
-    
+{
+
     public List<textLine> lines;
     public string itemName = "Interactable";
     public string description = "This is an interactable object.";
@@ -60,7 +60,8 @@ public class Interactable : MonoBehaviour
         hasBeenClicked = true;
         Debug.Log("clicked: " + itemName);
 
-        if(canBePickedUp){
+        if (canBePickedUp)
+        {
             // play pickup sound
         }
 
@@ -69,24 +70,39 @@ public class Interactable : MonoBehaviour
             GetComponent<SpriteRenderer>().sprite = altSprite;
         }
 
-        GameObject.FindObjectOfType<DialogManager>().Show(_dialogData);
+        DialogManager dm = FindObjectOfType<DialogManager>();
 
+
+        var dialog = new List<DialogData>();
+
+        if (dialog.Count > 0) dialog.Clear();
+        else
+        {
+            foreach (textLine line in lines)
+            {
+                dialog.Add(new DialogData(line.text, line.speaker, null, line.isSkippable));
+            }
+        }
+
+        dm.Show(dialog);
     }
 
 }
 
 [System.Serializable]
-public struct textLine{
+public struct textLine
+{
     public string text;
-    public bool isPlayer ;
-    public bool isSkippable ;
-    public string speaker ;
+    public bool isPlayer;
+    public bool isSkippable;
+    public string speaker;
 
-    public textLine(string _text ="text to say per line", bool _isPlayer = true, string _speaker = "Only fill if not player",  bool _skippable = true){
+    public textLine(string _text = "text to say per line", bool _isPlayer = true, string _speaker = "Only fill if not player", bool _skippable = true)
+    {
         text = _text;
         isPlayer = _isPlayer;
         isSkippable = _skippable;
-        speaker = isPlayer? "Protag-Kun" : _speaker;
+        speaker = isPlayer ? "Protag-Kun" : _speaker;
     }
 
 }
