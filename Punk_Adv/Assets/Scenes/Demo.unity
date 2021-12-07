@@ -223,10 +223,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lines:
-  - text: HI ICH BIN HANKIDANKI
-    isPlayer: 1
+  - text: Das Paket liegt auf dem Tisch. Versau es nicht, Kleine.
+    isPlayer: 0
     isSkippable: 1
-    speaker: Protag-Kun
+    speaker: Hank
+  - text: " Ich w\xFCrde ja selbst gehen, aber ich bin gerade etwas besch\xE4ftigt."
+    isPlayer: 0
+    isSkippable: 1
+    speaker: Hank
   alt_lines: []
   itemName: Interactable
   description: This is an interactable object.
@@ -802,6 +806,64 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 862770800826743747, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
       propertyPath: m_FlipY
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1291644924633095584, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1291644924633095584, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[0].text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1291644924633095584, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[1].text
+      value: Paket erhalten.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1291644924633095584, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[2].text
+      value: "Kannst dich auf mich verlassen, ruh\u2019 deine m\xFCden Knochen ruhig
+        etwas aus."
+      objectReference: {fileID: 0}
+    - target: {fileID: 1291644924633095584, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[3].text
+      value: " /sound:hankhaha/Vorsicht Kleine, meine Knochen sind noch jung und
+        knackig. Auch wenn ich schon \xE4lter bin, als du je sein wirst, hahaha!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1291644924633095584, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[4].text
+      value: "Haha stimmt, du h\xE4ltst dich gut in Form."
+      objectReference: {fileID: 0}
+    - target: {fileID: 1291644924633095584, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[0].speaker
+      value: Hank
+      objectReference: {fileID: 0}
+    - target: {fileID: 1291644924633095584, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[2].speaker
+      value: Protag-Kun
+      objectReference: {fileID: 0}
+    - target: {fileID: 1291644924633095584, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[3].speaker
+      value: Hank
+      objectReference: {fileID: 0}
+    - target: {fileID: 1291644924633095584, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[4].speaker
+      value: Protag-Kun
+      objectReference: {fileID: 0}
+    - target: {fileID: 1291644924633095584, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[2].isPlayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1291644924633095584, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[3].isPlayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1291644924633095584, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[4].isPlayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1291644924633095584, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[0].isSkippable
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1556047736915762127, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
@@ -1620,6 +1682,10 @@ PrefabInstance:
       propertyPath: CallSE.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8206358605457009699, guid: b1e781a67c6f97f4d9cfb50a61f30655, type: 3}
+      propertyPath: CallSE.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: f894c73f1cfe28542beb40d6494839b1, type: 3}
     - target: {fileID: 8206358605457009699, guid: b1e781a67c6f97f4d9cfb50a61f30655, type: 3}
       propertyPath: ChatSE.Array.data[0]
       value: 
