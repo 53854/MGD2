@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311992, g: 0.38074034, b: 0.35872713, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -123,6 +123,61 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &103630270 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8269625325746355363, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+  m_PrefabInstance: {fileID: 397283217}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &103630272
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 103630270}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 4.48, y: 8.38}
+    newSize: {x: 4.48, y: 8.38}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 4.48, y: 8.38}
+  m_EdgeRadius: 0
+--- !u!114 &103630273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 103630270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f21b893f599c4aa40a9624b106e0360d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lines:
+  - text: DOOOOR
+    isPlayer: 1
+    isSkippable: 1
+    speaker: Protag-Kun
+  itemName: Interactable
+  description: This is an interactable object.
+  canBePickedUp: 0
+  canBeUsed: 0
+  hasBeenClicked: 0
+  outLine: {fileID: 2144010462}
+  altSprite: {fileID: 0}
 --- !u!1001 &325689815
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -653,24 +708,178 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 558598713807980084, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 558598713807980084, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[0].text
+      value: "Ein Poster von Sex Pistols, einer der bekanntesten Punk-Bands der zweiten
+        H\xE4lfte der 1970er."
+      objectReference: {fileID: 0}
+    - target: {fileID: 558598713807980084, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[1].text
+      value: 1970... wie lange ist das eigentlich her?
+      objectReference: {fileID: 0}
+    - target: {fileID: 558598713807980084, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[2].text
+      value: Hank ist einer der Seltenen, die noch zu diesen Zeiten gelebt haben.
+      objectReference: {fileID: 0}
+    - target: {fileID: 558598713807980084, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[3].text
+      value: ...sah er damals auch schon so aus?
+      objectReference: {fileID: 0}
+    - target: {fileID: 558598713807980084, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[0].speaker
+      value: Protag-Kun
+      objectReference: {fileID: 0}
+    - target: {fileID: 558598713807980084, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[1].speaker
+      value: Protag-Kun
+      objectReference: {fileID: 0}
+    - target: {fileID: 558598713807980084, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[2].speaker
+      value: Protag-Kun
+      objectReference: {fileID: 0}
+    - target: {fileID: 558598713807980084, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[3].speaker
+      value: Protag-Kun
+      objectReference: {fileID: 0}
+    - target: {fileID: 558598713807980084, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[0].isPlayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 558598713807980084, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[1].isPlayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 558598713807980084, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[2].isPlayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 558598713807980084, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[3].isPlayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 558598713807980084, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[0].isSkippable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 558598713807980084, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[1].isSkippable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 558598713807980084, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[2].isSkippable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 558598713807980084, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[3].isSkippable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885850537789580078, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885850537789580078, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[0].text
+      value: "Hank erz\xE4hlt immer stolz, dass sein Cousin f\xFCr dieses Poster
+        posieren durfte."
+      objectReference: {fileID: 0}
+    - target: {fileID: 885850537789580078, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[1].text
+      value: ...sehen alle in seiner Familie so aus?
+      objectReference: {fileID: 0}
+    - target: {fileID: 885850537789580078, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[0].speaker
+      value: Protag-Kun
+      objectReference: {fileID: 0}
+    - target: {fileID: 885850537789580078, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[1].speaker
+      value: Protag-Kun
+      objectReference: {fileID: 0}
+    - target: {fileID: 885850537789580078, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[0].isPlayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885850537789580078, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[1].isPlayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885850537789580078, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[0].isSkippable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885850537789580078, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[1].isSkippable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1291644924633095584, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: canBePickedUp
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1291644924633095584, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
       propertyPath: lines.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1291644924633095584, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
       propertyPath: lines.Array.data[0].text
-      value: /click//sound:haha/ hahahahah
-      objectReference: {fileID: 0}
-    - target: {fileID: 1291644924633095584, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
-      propertyPath: lines.Array.data[0].speaker
-      value: Protag-Kun
-      objectReference: {fileID: 0}
-    - target: {fileID: 1291644924633095584, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
-      propertyPath: lines.Array.data[0].isPlayer
-      value: 1
+      value: Paket erhalten.
       objectReference: {fileID: 0}
     - target: {fileID: 1291644924633095584, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
       propertyPath: lines.Array.data[0].isSkippable
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1318904331666363271, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1318904331666363271, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[0].text
+      value: Will nicht wissen, was damit schon alles aufgewischt wurde.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1318904331666363271, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[1].text
+      value: ...
+      objectReference: {fileID: 0}
+    - target: {fileID: 1318904331666363271, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[2].text
+      value: '*sniff sniff*'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1318904331666363271, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[0].speaker
+      value: Protag-Kun
+      objectReference: {fileID: 0}
+    - target: {fileID: 1318904331666363271, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[1].speaker
+      value: Protag-Kun
+      objectReference: {fileID: 0}
+    - target: {fileID: 1318904331666363271, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[2].speaker
+      value: Protag-Kun
+      objectReference: {fileID: 0}
+    - target: {fileID: 1318904331666363271, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[0].isPlayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1318904331666363271, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[1].isPlayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1318904331666363271, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[2].isPlayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1318904331666363271, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[0].isSkippable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1318904331666363271, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[1].isSkippable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1318904331666363271, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[2].isSkippable
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1498717733565854976, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
@@ -695,6 +904,131 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1498717733565854976, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
       propertyPath: lines.Array.data[1].isSkippable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1970015385695073488, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1970015385695073488, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[0].text
+      value: "Hmm, St.Pauli... niemand hat hier je davon geh\xF6rt."
+      objectReference: {fileID: 0}
+    - target: {fileID: 1970015385695073488, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[1].text
+      value: Stammt das etwa aus Hank's Jugendzeit, so wie der Mann mit der 42?
+      objectReference: {fileID: 0}
+    - target: {fileID: 1970015385695073488, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[2].text
+      value: Moment, wann war eigentlich Hank's Jugendzeit...?
+      objectReference: {fileID: 0}
+    - target: {fileID: 1970015385695073488, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[0].speaker
+      value: Protag-Kun
+      objectReference: {fileID: 0}
+    - target: {fileID: 1970015385695073488, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[1].speaker
+      value: Protag-Kun
+      objectReference: {fileID: 0}
+    - target: {fileID: 1970015385695073488, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[2].speaker
+      value: Protag-Kun
+      objectReference: {fileID: 0}
+    - target: {fileID: 1970015385695073488, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[0].isPlayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1970015385695073488, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[1].isPlayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1970015385695073488, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[2].isPlayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1970015385695073488, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[0].isSkippable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1970015385695073488, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[1].isSkippable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1970015385695073488, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[2].isSkippable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2446340237759762944, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2446340237759762944, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[0].text
+      value: ...or what?
+      objectReference: {fileID: 0}
+    - target: {fileID: 2446340237759762944, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[0].speaker
+      value: Protag-Kun
+      objectReference: {fileID: 0}
+    - target: {fileID: 2446340237759762944, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[0].isPlayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2446340237759762944, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[0].isSkippable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2737389498115111291, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2737389498115111291, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[0].text
+      value: "Hier in Hank's Bar h\xE4ngen echt viele Poster von Bands, die schon
+        l\xE4ngst verstorben sind."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2737389498115111291, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[1].text
+      value: "Ich frage mich, ob Hank manchmal an die Zeiten von fr\xFCher zur\xFCckdenkt."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2737389498115111291, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[2].text
+      value: "...hat Hank eigentlich \xFCberhaupt sowas wie Gef\xFChle?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2737389498115111291, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[0].speaker
+      value: Protag-Kun
+      objectReference: {fileID: 0}
+    - target: {fileID: 2737389498115111291, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[1].speaker
+      value: Protag-Kun
+      objectReference: {fileID: 0}
+    - target: {fileID: 2737389498115111291, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[2].speaker
+      value: Protag-Kun
+      objectReference: {fileID: 0}
+    - target: {fileID: 2737389498115111291, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[0].isPlayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2737389498115111291, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[1].isPlayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2737389498115111291, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[2].isPlayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2737389498115111291, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[0].isSkippable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2737389498115111291, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[1].isSkippable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2737389498115111291, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[2].isSkippable
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2836654548923944529, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
@@ -744,6 +1078,63 @@ PrefabInstance:
     - target: {fileID: 4005331317302548018, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
       propertyPath: m_Name
       value: World
+      objectReference: {fileID: 0}
+    - target: {fileID: 4204452211206588837, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4204452211206588837, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[0].text
+      value: "Ich frage mich immer noch, wer blo\xDF dieser charismatische Mann ist."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4204452211206588837, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[1].text
+      value: "Hank erz\xE4hlt nicht viel \xFCber ihn, au\xDFer, dass er eine Legende
+        zu seinen Lebzeiten war."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4204452211206588837, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[2].text
+      value: "...und was hat es blo\xDF mit der 42 auf sich?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4204452211206588837, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[0].speaker
+      value: Protag-Kun
+      objectReference: {fileID: 0}
+    - target: {fileID: 4204452211206588837, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[1].speaker
+      value: Protag-Kun
+      objectReference: {fileID: 0}
+    - target: {fileID: 4204452211206588837, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[2].speaker
+      value: Protag-Kun
+      objectReference: {fileID: 0}
+    - target: {fileID: 4204452211206588837, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[0].isPlayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4204452211206588837, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[1].isPlayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4204452211206588837, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[2].isPlayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4204452211206588837, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[0].isSkippable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4204452211206588837, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[1].isSkippable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4204452211206588837, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[2].isSkippable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8269625325746355363, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
@@ -1317,3 +1708,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b1e781a67c6f97f4d9cfb50a61f30655, type: 3}
+--- !u!212 &2144010462 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 8978392185091877007, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+  m_PrefabInstance: {fileID: 397283217}
+  m_PrefabAsset: {fileID: 0}
