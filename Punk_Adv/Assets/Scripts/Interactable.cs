@@ -10,8 +10,6 @@ public class Interactable : MonoBehaviour
     public List<textLine> alt_lines;
     public string itemName = "Interactable";
     public string description = "This is an interactable object.";
-
-    public string callSound = "";
     
     public bool canBePickedUp = false;
     [HideInInspector]
@@ -69,10 +67,6 @@ public class Interactable : MonoBehaviour
        
         //Debug.Log("clicked: " + itemName);
         DialogManager dm = FindObjectOfType<DialogManager>();
-
-        if(callSound != ""){
-            dm.Play_CallSE(callSound);
-        }
 
 
         if (canBePickedUp)
