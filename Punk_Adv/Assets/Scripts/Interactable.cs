@@ -8,9 +8,11 @@ public class Interactable : MonoBehaviour
 
     public List<textLine> lines;
     public List<textLine> alt_lines;
+    public List<textLine> playerHasPack_lines;
+    public List<textLine> playerHasKey_lines;
     public string itemName = "Interactable";
     public string description = "This is an interactable object.";
-    
+
     public bool canBePickedUp = false;
     [HideInInspector]
     public bool canBeUsed = false;
@@ -19,13 +21,17 @@ public class Interactable : MonoBehaviour
     public SpriteRenderer outLine = null;
     public Sprite altSprite = null;
 
-
+    Controller con;
+    DialogManager dm;
     Color initColour;
     List<DialogData> _dialogData = new List<DialogData>();
 
     // Start is called before the first frame update
     void Start()
     {
+
+        con = FindObjectOfType<Controller>();
+        dm = FindObjectOfType<DialogManager>();
 
         if (outLine != null) { initColour = outLine.color; }
 
@@ -64,11 +70,6 @@ public class Interactable : MonoBehaviour
 
     private void OnMouseDown()
     {
-       
-        //Debug.Log("clicked: " + itemName);
-        DialogManager dm = FindObjectOfType<DialogManager>();
-
-
         if (canBePickedUp)
         {
             // play pickup sound
@@ -79,18 +80,29 @@ public class Interactable : MonoBehaviour
             GetComponent<SpriteRenderer>().sprite = altSprite;
         }
 
-        
-
-
         var dialog = new List<DialogData>();
 
         if (dialog.Count > 0) dialog.Clear();
+        else if (playerHasPack_lines.Count > 0 && con.hasPack)
+        {
+            foreach (textLine line in playerHasPack_lines)
+            {
+                dialog.Add(new DialogData(line.text, line.speaker, null, line.isSkippable));
+            }
+        }
+        else if (playerHasKey_lines.Count > 0 && con.hasKey)
+        {
+            foreach (textLine line in playerHasKey_lines)
+            {
+                dialog.Add(new DialogData(line.text, line.speaker, null, line.isSkippable));
+            }
+        }
         else
         {
 
-            if(alt_lines.Count == 0) alt_lines = lines;
+            if (alt_lines.Count == 0) alt_lines = lines;
 
-            List<textLine> temp = hasBeenClicked? alt_lines : lines;
+            List<textLine> temp = hasBeenClicked ? alt_lines : lines;
 
             foreach (textLine line in temp)
             {
@@ -100,7 +112,7 @@ public class Interactable : MonoBehaviour
 
         if (dm.state == State.Deactivate) dm.Show(dialog);
         hasBeenClicked = true;
-    } 
+    }
 
 }
 
