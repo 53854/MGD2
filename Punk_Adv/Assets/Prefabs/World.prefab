@@ -1,5 +1,239 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &263378620546806162
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2780095670920957693}
+  - component: {fileID: 3799559585419745941}
+  - component: {fileID: 4285620649490206392}
+  - component: {fileID: 9084851522558343243}
+  - component: {fileID: 641131005891955306}
+  m_Layer: 0
+  m_Name: itm_Radio
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2780095670920957693
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 263378620546806162}
+  m_LocalRotation: {x: -0.00043126498, y: -0.1062805, z: -0.0040347828, w: 0.9943279}
+  m_LocalPosition: {x: -0.46, y: 12.65, z: -0.03}
+  m_LocalScale: {x: 0.15413558, y: 0.15413558, z: 0.15413558}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 9198929085514786593}
+  m_Father: {fileID: 7505476713225318953}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: -0.098, y: -12.202, z: -0.454}
+--- !u!212 &3799559585419745941
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 263378620546806162}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 1920631189
+  m_SortingLayer: 2
+  m_SortingOrder: 40
+  m_Sprite: {fileID: 8830063773746032701, guid: 3df58767424989b40bfadf4556608400, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 13.62, y: 8.34}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!61 &4285620649490206392
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 263378620546806162}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 13.62, y: 8.34}
+    newSize: {x: 13.62, y: 8.34}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 13.62, y: 8.34}
+  m_EdgeRadius: 0
+--- !u!82 &9084851522558343243
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 263378620546806162}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 3a4e1b6220ee20048a512f9f5e559b07, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.25
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 131
+  DopplerLevel: 1
+  MinDistance: 3.2108822
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &641131005891955306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 263378620546806162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f21b893f599c4aa40a9624b106e0360d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lines:
+  - text: I love that station
+    isPlayer: 1
+    isSkippable: 1
+    speaker: Protag-Kun
+  itemName: A Radio
+  description: This is an interactable object.
+  canBePickedUp: 0
+  canBeUsed: 0
+  hasBeenClicked: 0
+  outLine: {fileID: 6205908634580108910}
+  altSprite: {fileID: 0}
 --- !u!1 &360686899612311229
 GameObject:
   m_ObjectHideFlags: 0
@@ -205,10 +439,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f21b893f599c4aa40a9624b106e0360d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lines: []
+  lines:
+  - text: Paket erhalten.
+    isPlayer: 0
+    isSkippable: 0
+    speaker: 
   itemName: NotDrugs
   description: This is an interactable object.
-  canBePickedUp: 0
+  canBePickedUp: 1
   canBeUsed: 0
   hasBeenClicked: 0
   outLine: {fileID: 2294187364228353116}
@@ -313,7 +551,7 @@ SpriteRenderer:
   m_SortingLayer: 1
   m_SortingOrder: 39
   m_Sprite: {fileID: -4063077475184522206, guid: d088eb36564488844934508bdcc7637a, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.18867922, g: 0.18867922, b: 0.18867922, a: 0.49803922}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -571,7 +809,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f21b893f599c4aa40a9624b106e0360d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lines: []
+  lines:
+  - text: Will nicht wissen, was damit schon alles aufgewischt wurde.
+    isPlayer: 1
+    isSkippable: 1
+    speaker: Protag-Kun
+  - text: ...
+    isPlayer: 1
+    isSkippable: 1
+    speaker: Protag-Kun
+  - text: '*sniff sniff*'
+    isPlayer: 1
+    isSkippable: 1
+    speaker: Protag-Kun
   itemName: Du
   description: This is an interactable object.
   canBePickedUp: 0
@@ -801,8 +1051,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1920631189
-  m_SortingLayer: 2
+  m_SortingLayerID: 687879437
+  m_SortingLayer: 1
   m_SortingOrder: 10
   m_Sprite: {fileID: 6632593400379254398, guid: d088eb36564488844934508bdcc7637a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -853,7 +1103,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f21b893f599c4aa40a9624b106e0360d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lines: []
+  lines:
+  - text: "Hmm, St.Pauli... niemand hat hier je davon geh\xF6rt."
+    isPlayer: 1
+    isSkippable: 1
+    speaker: Protag-Kun
+  - text: Stammt das etwa aus Hank's Jugendzeit, so wie der Mann mit der 42?
+    isPlayer: 1
+    isSkippable: 1
+    speaker: Protag-Kun
+  - text: Moment, wann war eigentlich Hank's Jugendzeit...?
+    isPlayer: 1
+    isSkippable: 1
+    speaker: Protag-Kun
   itemName: Interactable
   description: This is an interactable object.
   canBePickedUp: 0
@@ -1019,7 +1281,7 @@ SpriteRenderer:
   m_SortingLayer: 1
   m_SortingOrder: 7
   m_Sprite: {fileID: -4885532911350693260, guid: d088eb36564488844934508bdcc7637a, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.21698111, g: 0.21698111, b: 0.21698111, a: 0.72156864}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1154,7 +1416,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f21b893f599c4aa40a9624b106e0360d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lines: []
+  lines:
+  - text: ...or what?
+    isPlayer: 1
+    isSkippable: 1
+    speaker: Protag-Kun
   itemName: Interactable
   description: This is an interactable object.
   canBePickedUp: 0
@@ -1371,7 +1637,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f21b893f599c4aa40a9624b106e0360d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lines: []
+  lines:
+  - text: "Hier in Hank's Bar h\xE4ngen echt viele Poster von Bands, die schon l\xE4ngst
+      verstorben sind."
+    isPlayer: 1
+    isSkippable: 1
+    speaker: Protag-Kun
+  - text: "Ich frage mich, ob Hank manchmal an die Zeiten von fr\xFCher zur\xFCckdenkt."
+    isPlayer: 1
+    isSkippable: 1
+    speaker: Protag-Kun
+  - text: "...hat Hank eigentlich \xFCberhaupt sowas wie Gef\xFChle?"
+    isPlayer: 1
+    isSkippable: 1
+    speaker: Protag-Kun
   itemName: Interactable
   description: This is an interactable object.
   canBePickedUp: 0
@@ -1799,7 +2078,7 @@ SpriteRenderer:
   m_Size: {x: 0.87, y: 0.5}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &1262767981171442128
@@ -1871,7 +2150,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4005331317302548018}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 2.9, y: 2.9, z: 2.9}
   m_ConstrainProportionsScale: 0
@@ -2097,7 +2376,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f21b893f599c4aa40a9624b106e0360d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lines: []
+  lines:
+  - text: Ich frage mich immer noch, wer bloss dieser charismatische Mann ist.
+    isPlayer: 1
+    isSkippable: 1
+    speaker: Protag-Kun
+  - text: "Hank erz\xE4hlt nicht viel \xFCber ihn, au\xDFer, dass er eine Legende
+      zu seinen Lebzeiten war."
+    isPlayer: 1
+    isSkippable: 1
+    speaker: Protag-Kun
+  - text: "...und was hat es blo\xDF mit der 42 auf sich?"
+    isPlayer: 1
+    isSkippable: 1
+    speaker: Protag-Kun
   itemName: Interactable
   description: This is an interactable object.
   canBePickedUp: 0
@@ -2230,7 +2522,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f21b893f599c4aa40a9624b106e0360d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lines: []
+  lines:
+  - text: "Hank erz\xE4hlt immer stolz, dass sein Cousin f\xFCr dieses Poster posieren
+      durfte."
+    isPlayer: 1
+    isSkippable: 1
+    speaker: Protag-Kun
   itemName: Interactable
   description: This is an interactable object.
   canBePickedUp: 0
@@ -2238,6 +2535,90 @@ MonoBehaviour:
   hasBeenClicked: 0
   outLine: {fileID: 6247379747013089869}
   altSprite: {fileID: 0}
+--- !u!1 &5031376342487268895
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9198929085514786593}
+  - component: {fileID: 6205908634580108910}
+  m_Layer: 0
+  m_Name: Radio's Outer Stroke
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9198929085514786593
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5031376342487268895}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2780095670920957693}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &6205908634580108910
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5031376342487268895}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 1920631189
+  m_SortingLayer: 2
+  m_SortingOrder: 39
+  m_Sprite: {fileID: 1286093934630264783, guid: 3df58767424989b40bfadf4556608400, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 14.62, y: 9.34}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &5042892062476786871
 GameObject:
   m_ObjectHideFlags: 0
@@ -2363,7 +2744,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f21b893f599c4aa40a9624b106e0360d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lines: []
+  lines:
+  - text: "Ein Poster von Sex Pistols, einer der bekanntesten Punk-Bands der zweiten
+      H\xE4lfte der 1970er."
+    isPlayer: 1
+    isSkippable: 1
+    speaker: Protag-Kun
+  - text: 1970... wie lange ist das eigentlich her?
+    isPlayer: 1
+    isSkippable: 1
+    speaker: Protag-Kun
+  - text: Hank ist einer der Seltenen, die noch zu diesen Zeiten gelebt haben.
+    isPlayer: 1
+    isSkippable: 1
+    speaker: Protag-Kun
+  - text: ...sah er damals auch schon so aus?
+    isPlayer: 1
+    isSkippable: 1
+    speaker: Protag-Kun
   itemName: Interactable
   description: This is an interactable object.
   canBePickedUp: 0
@@ -2605,7 +3003,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lines:
-  - text: /size:up/ WOW /size:init/ nutz...
+  - text: /size:up/ DEEZE /size:init/...
+    isPlayer: 1
+    isSkippable: 1
+    speaker: Protag-Kun
+  - text: /size:up/ /size:up/ NUDDZ /size:init/ hihihii...
     isPlayer: 1
     isSkippable: 1
     speaker: Protag-Kun
@@ -3224,8 +3626,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7367589737149204483}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.0733, y: -0.0026, z: 0}
+  m_LocalScale: {x: 0.9588165, y: 0.9850772, z: 1.0088}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6863862848559500307}
@@ -3273,7 +3675,7 @@ SpriteRenderer:
   m_SortingLayer: 1
   m_SortingOrder: 29
   m_Sprite: {fileID: -6558884595853425120, guid: d088eb36564488844934508bdcc7637a, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.084905684, g: 0.084905684, b: 0.084905684, a: 0.43137255}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -3357,7 +3759,7 @@ SpriteRenderer:
   m_SortingLayer: 1
   m_SortingOrder: 11
   m_Sprite: {fileID: 6236375446483817194, guid: d088eb36564488844934508bdcc7637a, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.20754719, g: 0.20754719, b: 0.20754719, a: 0.41960785}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -3400,6 +3802,7 @@ Transform:
   - {fileID: 1989281342735805922}
   - {fileID: 9127144556065947208}
   - {fileID: 8185301436832155602}
+  - {fileID: 2780095670920957693}
   m_Father: {fileID: 2836654548923944529}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3586,8 +3989,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7557477734155717203}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.0664, y: -0.011, z: 0}
+  m_LocalScale: {x: 0.9371134, y: 0.94288576, z: 0.97348}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6140013948025093398}
@@ -3635,7 +4038,7 @@ SpriteRenderer:
   m_SortingLayer: 1
   m_SortingOrder: 27
   m_Sprite: {fileID: -3686460265573304582, guid: d088eb36564488844934508bdcc7637a, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.084905684, g: 0.084905684, b: 0.084905684, a: 0.43137255}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -3717,8 +4120,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 687879437
-  m_SortingLayer: 1
+  m_SortingLayerID: 1920631189
+  m_SortingLayer: 2
   m_SortingOrder: 33
   m_Sprite: {fileID: -6872837210596691135, guid: d088eb36564488844934508bdcc7637a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -3859,7 +4262,7 @@ SpriteRenderer:
   m_SortingLayer: 1
   m_SortingOrder: 24
   m_Sprite: {fileID: -3602775209895130739, guid: d088eb36564488844934508bdcc7637a, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.1509434, g: 0.1509434, b: 0.1509434, a: 0.6666667}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -3879,9 +4282,11 @@ GameObject:
   m_Component:
   - component: {fileID: 7734564554731256309}
   - component: {fileID: 1357999968167795287}
+  - component: {fileID: 103630272}
+  - component: {fileID: 103630273}
   m_Layer: 0
-  m_Name: Door
-  m_TagString: Untagged
+  m_Name: Main_Door
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3954,6 +4359,56 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &103630272
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8269625325746355363}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 4.48, y: 8.38}
+    newSize: {x: 4.48, y: 8.38}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 4.48, y: 8.38}
+  m_EdgeRadius: 0
+--- !u!114 &103630273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8269625325746355363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f21b893f599c4aa40a9624b106e0360d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lines:
+  - text: DOOOOR
+    isPlayer: 1
+    isSkippable: 1
+    speaker: Protag-Kun
+  itemName: Interactable
+  description: This is an interactable object.
+  canBePickedUp: 0
+  canBeUsed: 0
+  hasBeenClicked: 0
+  outLine: {fileID: 8978392185091877007}
+  altSprite: {fileID: 0}
 --- !u!1 &8392087871428180289
 GameObject:
   m_ObjectHideFlags: 0
@@ -4028,7 +4483,7 @@ SpriteRenderer:
   m_SortingLayer: 1
   m_SortingOrder: 3
   m_Sprite: {fileID: 343693865570097820, guid: d088eb36564488844934508bdcc7637a, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.6392157}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -4219,7 +4674,7 @@ GameObject:
   - component: {fileID: 6250191299380127222}
   - component: {fileID: 8978392185091877007}
   m_Layer: 0
-  m_Name: Door's Outer Stroke
+  m_Name: Main_Door's Outer Stroke
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

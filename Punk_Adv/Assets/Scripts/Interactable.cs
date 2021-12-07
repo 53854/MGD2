@@ -9,6 +9,9 @@ public class Interactable : MonoBehaviour
     public List<textLine> lines;
     public string itemName = "Interactable";
     public string description = "This is an interactable object.";
+
+    public string callSound = "";
+
     public bool canBePickedUp = false;
     [HideInInspector]
     public bool canBeUsed = false;
@@ -17,11 +20,16 @@ public class Interactable : MonoBehaviour
     public SpriteRenderer outLine = null;
     public Sprite altSprite = null;
 
+
+    Color initColour;
     List<DialogData> _dialogData = new List<DialogData>();
 
     // Start is called before the first frame update
     void Start()
     {
+
+        if (outLine != null) { initColour = outLine.color; }
+
         foreach (textLine line in lines)
         {
             _dialogData.Add(new DialogData(line.text, line.speaker, null, line.isSkippable));
@@ -51,14 +59,20 @@ public class Interactable : MonoBehaviour
     {
         if (outLine != null)
         {
-            outLine.color = Color.white;
+            outLine.color = initColour;
         }
     }
 
     private void OnMouseDown()
     {
         hasBeenClicked = true;
-        Debug.Log("clicked: " + itemName);
+        //Debug.Log("clicked: " + itemName);
+        DialogManager dm = FindObjectOfType<DialogManager>();
+
+        if(callSound != ""){
+            dm.Play_CallSE(callSound);
+        }
+
 
         if (canBePickedUp)
         {
@@ -70,7 +84,7 @@ public class Interactable : MonoBehaviour
             GetComponent<SpriteRenderer>().sprite = altSprite;
         }
 
-        DialogManager dm = FindObjectOfType<DialogManager>();
+        
 
 
         var dialog = new List<DialogData>();
@@ -84,7 +98,7 @@ public class Interactable : MonoBehaviour
             }
         }
 
-        dm.Show(dialog);
+        if (dm.state == State.Deactivate) dm.Show(dialog);
     }
 
 }
