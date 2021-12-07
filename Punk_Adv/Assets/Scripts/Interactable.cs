@@ -66,7 +66,7 @@ public class Interactable : MonoBehaviour
 
     private void OnMouseDown()
     {
-        hasBeenClicked = true;
+       
         //Debug.Log("clicked: " + itemName);
         DialogManager dm = FindObjectOfType<DialogManager>();
 
@@ -98,14 +98,15 @@ public class Interactable : MonoBehaviour
 
             List<textLine> temp = hasBeenClicked? alt_lines : lines;
 
-            foreach (textLine line in lines)
+            foreach (textLine line in temp)
             {
                 dialog.Add(new DialogData(line.text, line.speaker, null, line.isSkippable));
             }
         }
 
         if (dm.state == State.Deactivate) dm.Show(dialog);
-    }
+        hasBeenClicked = true;
+    } 
 
 }
 
