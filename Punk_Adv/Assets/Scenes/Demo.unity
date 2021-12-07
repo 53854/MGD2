@@ -814,6 +814,22 @@ PrefabInstance:
       propertyPath: lines.Array.data[1].isSkippable
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1291644924633095584, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: canBePickedUp
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1291644924633095584, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1291644924633095584, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[0].text
+      value: Paket erhalten.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1291644924633095584, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: lines.Array.data[0].isSkippable
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1318904331666363271, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
       propertyPath: lines.Array.size
       value: 3
