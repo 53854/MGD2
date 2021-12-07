@@ -719,7 +719,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 558598713807980084, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
       propertyPath: lines.Array.data[1].text
-      value: 1970... wie lange ist das denn her?
+      value: 1970... wie lange ist das eigentlich her?
       objectReference: {fileID: 0}
     - target: {fileID: 558598713807980084, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
       propertyPath: lines.Array.data[2].text
