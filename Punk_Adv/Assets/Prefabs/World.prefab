@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4285620649490206392}
   - component: {fileID: 9084851522558343243}
   - component: {fileID: 641131005891955306}
+  - component: {fileID: 1620697756}
   m_Layer: 0
   m_Name: itm_Radio
   m_TagString: Untagged
@@ -27,15 +28,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 263378620546806162}
-  m_LocalRotation: {x: -0.00043126498, y: -0.1062805, z: -0.0040347828, w: 0.9943279}
-  m_LocalPosition: {x: -0.46, y: 12.65, z: -0.03}
+  m_LocalRotation: {x: 0.015610154, y: -0.22148424, z: -0.0002075233, w: 0.975039}
+  m_LocalPosition: {x: 2.6600013, y: 12.625, z: 0.64}
   m_LocalScale: {x: 0.15413558, y: 0.15413558, z: 0.15413558}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 9198929085514786593}
   m_Father: {fileID: 7505476713225318953}
   m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: -0.098, y: -12.202, z: -0.454}
+  m_LocalEulerAnglesHint: {x: 1.739, y: -25.602, z: -0.42}
 --- !u!212 &3799559585419745941
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -126,7 +127,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 3a4e1b6220ee20048a512f9f5e559b07, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.25
+  m_Volume: 0.09
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -227,6 +228,9 @@ MonoBehaviour:
     isPlayer: 1
     isSkippable: 1
     speaker: Protag-Kun
+  alt_lines: []
+  playerHasPack_lines: []
+  playerHasKey_lines: []
   itemName: A Radio
   description: This is an interactable object.
   canBePickedUp: 0
@@ -234,6 +238,18 @@ MonoBehaviour:
   hasBeenClicked: 0
   outLine: {fileID: 6205908634580108910}
   altSprite: {fileID: 0}
+--- !u!114 &1620697756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 263378620546806162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39a16ceac94ec7d40ac5a8f2c2bf9e85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &360686899612311229
 GameObject:
   m_ObjectHideFlags: 0
@@ -245,6 +261,7 @@ GameObject:
   - component: {fileID: 8185301436832155602}
   - component: {fileID: 1905680762818431345}
   - component: {fileID: 1905680762818431344}
+  - component: {fileID: 1333858328}
   m_Layer: 0
   m_Name: "itm_M\xFClleimerOhneGestank"
   m_TagString: Interactable
@@ -260,7 +277,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 360686899612311229}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.8499985, y: 7.84, z: 0}
+  m_LocalPosition: {x: -18.21, y: 6.27, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -332,7 +349,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f21b893f599c4aa40a9624b106e0360d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lines: []
+  lines:
+  - text: EW... Hier scheint auch nichts zu sein...
+    isPlayer: 1
+    isSkippable: 1
+    speaker: Protag-Kun
+  alt_lines: []
+  playerHasPack_lines: []
+  playerHasKey_lines: []
   itemName: Interactable
   description: This is an interactable object.
   canBePickedUp: 0
@@ -340,6 +364,32 @@ MonoBehaviour:
   hasBeenClicked: 0
   outLine: {fileID: 323146549203764073}
   altSprite: {fileID: 0}
+--- !u!61 &1333858328
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 360686899612311229}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.4, y: 1.92}
+    newSize: {x: 1.4, y: 1.92}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.4, y: 1.92}
+  m_EdgeRadius: 0
 --- !u!1 &564877561030184960
 GameObject:
   m_ObjectHideFlags: 0
@@ -352,6 +402,7 @@ GameObject:
   - component: {fileID: 1291644924633095586}
   - component: {fileID: 1291644924633095584}
   - component: {fileID: 1291644924633095585}
+  - component: {fileID: 974857924}
   m_Layer: 0
   m_Name: itm_Paket
   m_TagString: Interactable
@@ -440,10 +491,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lines:
+  - text: 
+    isPlayer: 0
+    isSkippable: 0
+    speaker: Hank
   - text: Paket erhalten.
     isPlayer: 0
     isSkippable: 0
     speaker: 
+  - text: "Kannst dich auf mich verlassen, ruh\u2019 deine m\xFCden Knochen ruhig
+      etwas aus."
+    isPlayer: 1
+    isSkippable: 0
+    speaker: Protag-Kun
+  - text: " /sound:hankhaha/Vorsicht Kleine, meine Knochen sind noch jung und knackig.
+      Auch wenn ich schon \xE4lter bin, als du je sein wirst, hahaha!"
+    isPlayer: 0
+    isSkippable: 0
+    speaker: Hank
+  - text: "Haha stimmt, du h\xE4ltst dich gut in Form."
+    isPlayer: 1
+    isSkippable: 0
+    speaker: Protag-Kun
+  alt_lines: []
+  playerHasPack_lines: []
+  playerHasKey_lines: []
   itemName: NotDrugs
   description: This is an interactable object.
   canBePickedUp: 1
@@ -477,6 +549,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 18.593487, y: 11.466611}
   m_EdgeRadius: 0
+--- !u!114 &974857924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 564877561030184960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 472a193be35fadd4183566f503658268, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &687710254749324421
 GameObject:
   m_ObjectHideFlags: 0
@@ -822,6 +906,9 @@ MonoBehaviour:
     isPlayer: 1
     isSkippable: 1
     speaker: Protag-Kun
+  alt_lines: []
+  playerHasPack_lines: []
+  playerHasKey_lines: []
   itemName: Du
   description: This is an interactable object.
   canBePickedUp: 0
@@ -1116,6 +1203,9 @@ MonoBehaviour:
     isPlayer: 1
     isSkippable: 1
     speaker: Protag-Kun
+  alt_lines: []
+  playerHasPack_lines: []
+  playerHasKey_lines: []
   itemName: Interactable
   description: This is an interactable object.
   canBePickedUp: 0
@@ -1421,6 +1511,9 @@ MonoBehaviour:
     isPlayer: 1
     isSkippable: 1
     speaker: Protag-Kun
+  alt_lines: []
+  playerHasPack_lines: []
+  playerHasKey_lines: []
   itemName: Interactable
   description: This is an interactable object.
   canBePickedUp: 0
@@ -1498,8 +1591,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 687879437
-  m_SortingLayer: 1
+  m_SortingLayerID: 1920631189
+  m_SortingLayer: 2
   m_SortingOrder: 34
   m_Sprite: {fileID: -8700394155840757508, guid: d088eb36564488844934508bdcc7637a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1651,6 +1744,9 @@ MonoBehaviour:
     isPlayer: 1
     isSkippable: 1
     speaker: Protag-Kun
+  alt_lines: []
+  playerHasPack_lines: []
+  playerHasKey_lines: []
   itemName: Interactable
   description: This is an interactable object.
   canBePickedUp: 0
@@ -2094,6 +2190,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lines: []
+  alt_lines: []
+  playerHasPack_lines: []
+  playerHasKey_lines: []
   itemName: Key
   description: This is an interactable object.
   canBePickedUp: 0
@@ -2390,6 +2489,9 @@ MonoBehaviour:
     isPlayer: 1
     isSkippable: 1
     speaker: Protag-Kun
+  alt_lines: []
+  playerHasPack_lines: []
+  playerHasKey_lines: []
   itemName: Interactable
   description: This is an interactable object.
   canBePickedUp: 0
@@ -2528,6 +2630,9 @@ MonoBehaviour:
     isPlayer: 1
     isSkippable: 1
     speaker: Protag-Kun
+  alt_lines: []
+  playerHasPack_lines: []
+  playerHasKey_lines: []
   itemName: Interactable
   description: This is an interactable object.
   canBePickedUp: 0
@@ -2762,6 +2867,9 @@ MonoBehaviour:
     isPlayer: 1
     isSkippable: 1
     speaker: Protag-Kun
+  alt_lines: []
+  playerHasPack_lines: []
+  playerHasKey_lines: []
   itemName: Interactable
   description: This is an interactable object.
   canBePickedUp: 0
@@ -2794,15 +2902,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5268154687120692286}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.5600011, y: 11.224999, z: 0}
+  m_LocalRotation: {x: 0.016813679, y: -0.11653711, z: 0.0019731475, w: 0.9930421}
+  m_LocalPosition: {x: 0.56, y: 11.2, z: 0.67}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 402399676762401053}
   m_Father: {fileID: 7505476714829490196}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 1.94, y: -13.387, z: 0}
 --- !u!212 &1440228270354641736
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3011,6 +3119,9 @@ MonoBehaviour:
     isPlayer: 1
     isSkippable: 1
     speaker: Protag-Kun
+  alt_lines: []
+  playerHasPack_lines: []
+  playerHasKey_lines: []
   itemName: Penutz
   description: This is an interactable object.
   canBePickedUp: 0
@@ -3198,8 +3309,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 687879437
-  m_SortingLayer: 1
+  m_SortingLayerID: 1920631189
+  m_SortingLayer: 2
   m_SortingOrder: 36
   m_Sprite: {fileID: -1665790967764556646, guid: d088eb36564488844934508bdcc7637a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -4402,6 +4513,9 @@ MonoBehaviour:
     isPlayer: 1
     isSkippable: 1
     speaker: Protag-Kun
+  alt_lines: []
+  playerHasPack_lines: []
+  playerHasKey_lines: []
   itemName: Interactable
   description: This is an interactable object.
   canBePickedUp: 0
