@@ -88,13 +88,6 @@ public class Interactable : MonoBehaviour
         var dialog = new List<DialogData>();
 
         if (dialog.Count > 0) dialog.Clear();
-        else if (playerHasPack_lines.Count > 0 && con.hasPack)
-        {
-            foreach (textLine line in playerHasPack_lines)
-            {
-                dialog.Add(new DialogData(line.text, line.speaker, null, line.isSkippable));
-            }
-        }
         else if (playerHasKey_lines.Count > 0 && con.hasKey)
         {
             foreach (textLine line in playerHasKey_lines)
@@ -102,6 +95,14 @@ public class Interactable : MonoBehaviour
                 dialog.Add(new DialogData(line.text, line.speaker, null, line.isSkippable));
             }
         }
+        else if (playerHasPack_lines.Count > 0 && con.hasPack)
+        {
+            foreach (textLine line in playerHasPack_lines)
+            {
+                dialog.Add(new DialogData(line.text, line.speaker, null, line.isSkippable));
+            }
+        }
+        
         else
         {
 

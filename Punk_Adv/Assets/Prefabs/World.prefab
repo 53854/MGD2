@@ -224,7 +224,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lines:
-  - text: I love that station
+  - text: Der Moderator dieser Radiosendung geht mir echt auf den Sack...
     isPlayer: 1
     isSkippable: 1
     speaker: Protag-Kun
@@ -233,6 +233,8 @@ MonoBehaviour:
   playerHasKey_lines: []
   itemName: A Radio
   description: This is an interactable object.
+  requiresPack: 0
+  requiresKey: 0
   canBePickedUp: 0
   canBeUsed: 0
   hasBeenClicked: 0
@@ -350,19 +352,44 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lines:
-  - text: EW... Hier scheint auch nichts zu sein...
-    isPlayer: 1
-    isSkippable: 1
-    speaker: Protag-Kun
-  - text: asdf
+  - text: Schmacko.
     isPlayer: 1
     isSkippable: 1
     speaker: Protag-Kun
   alt_lines: []
-  playerHasPack_lines: []
-  playerHasKey_lines: []
+  playerHasPack_lines:
+  - text: "Ich wei\xDF gar nicht mehr, wie oft Hank mir schon eins uebergebraten
+      hat, weil ich in diesen M\xFClleimer gekotzt habe."
+    isPlayer: 1
+    isSkippable: 1
+    speaker: Protag-Kun
+  - text: ...muss ich den jetzt wirklich durchsuchen?
+    isPlayer: 1
+    isSkippable: 1
+    speaker: Protag-Kun
+  - text: Karma's a bitch I guess.
+    isPlayer: 1
+    isSkippable: 1
+    speaker: Protag-Kun
+  - text: ...
+    isPlayer: 1
+    isSkippable: 1
+    speaker: Protag-Kun
+  - text: "...nichts, au\xDFer /speed:down/ ... /speed:init/ irgendwas fl\xFCssiges
+      /speed:down/ ... /speed:init/ und irgendwie auch klebriges /speed:down/ ...
+      /speed:init/"
+    isPlayer: 1
+    isSkippable: 1
+    speaker: Protag-Kun
+  playerHasKey_lines:
+  - text: "Ich gehe n\xE4chstes Mal ins Klo kotzen..."
+    isPlayer: 1
+    isSkippable: 1
+    speaker: Protag-Kun
   itemName: Interactable
   description: This is an interactable object.
+  requiresPack: 0
+  requiresKey: 0
   canBePickedUp: 0
   canBeUsed: 0
   hasBeenClicked: 0
@@ -407,6 +434,8 @@ GameObject:
   - component: {fileID: 1291644924633095584}
   - component: {fileID: 1291644924633095585}
   - component: {fileID: 974857924}
+  - component: {fileID: 2329520593194369225}
+  - component: {fileID: 3985406108347597483}
   m_Layer: 0
   m_Name: itm_Paket
   m_TagString: Interactable
@@ -422,7 +451,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 564877561030184960}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.907, y: 9.157, z: 0}
+  m_LocalPosition: {x: -4.907, y: 9.157, z: -0.5}
   m_LocalScale: {x: 0.04935163, y: 0.04935163, z: 0.04935163}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -495,10 +524,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lines:
-  - text: 
-    isPlayer: 0
-    isSkippable: 0
-    speaker: Hank
   - text: Paket erhalten.
     isPlayer: 0
     isSkippable: 0
@@ -522,6 +547,8 @@ MonoBehaviour:
   playerHasKey_lines: []
   itemName: NotDrugs
   description: This is an interactable object.
+  requiresPack: 0
+  requiresKey: 0
   canBePickedUp: 1
   canBeUsed: 0
   hasBeenClicked: 0
@@ -540,7 +567,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.8518467, y: -0.5423894}
+  m_Offset: {x: 0.6808419, y: -0.5423894}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -551,7 +578,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 18.593487, y: 11.466611}
+  m_Size: {x: 22.355633, y: 11.466611}
   m_EdgeRadius: 0
 --- !u!114 &974857924
 MonoBehaviour:
@@ -565,6 +592,115 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 472a193be35fadd4183566f503658268, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!82 &2329520593194369225
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 564877561030184960}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 846298e5c09eb784da67edfd9edbaaa5, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &3985406108347597483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 564877561030184960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 759d2daad7a4d124f81261a4d728bb6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lowerVolumeLevel: 0.2
 --- !u!1 &687710254749324421
 GameObject:
   m_ObjectHideFlags: 0
@@ -915,6 +1051,8 @@ MonoBehaviour:
   playerHasKey_lines: []
   itemName: Du
   description: This is an interactable object.
+  requiresPack: 0
+  requiresKey: 0
   canBePickedUp: 0
   canBeUsed: 0
   hasBeenClicked: 0
@@ -1212,6 +1350,8 @@ MonoBehaviour:
   playerHasKey_lines: []
   itemName: Interactable
   description: This is an interactable object.
+  requiresPack: 0
+  requiresKey: 0
   canBePickedUp: 0
   canBeUsed: 0
   hasBeenClicked: 0
@@ -1520,6 +1660,8 @@ MonoBehaviour:
   playerHasKey_lines: []
   itemName: Interactable
   description: This is an interactable object.
+  requiresPack: 0
+  requiresKey: 0
   canBePickedUp: 0
   canBeUsed: 0
   hasBeenClicked: 0
@@ -1753,6 +1895,8 @@ MonoBehaviour:
   playerHasKey_lines: []
   itemName: Interactable
   description: This is an interactable object.
+  requiresPack: 0
+  requiresKey: 0
   canBePickedUp: 0
   canBeUsed: 0
   hasBeenClicked: 0
@@ -2123,7 +2267,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3977752795826264936}
   m_LocalRotation: {x: -0.32741645, y: 0.32317543, z: -0.6234647, w: -0.6321772}
-  m_LocalPosition: {x: 7.43, y: 7.187, z: -0.014}
+  m_LocalPosition: {x: 7.43, y: 7.187, z: -0.1}
   m_LocalScale: {x: 0.08098507, y: 0.08098507, z: 0.08098507}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2171,15 +2315,15 @@ SpriteRenderer:
   m_SortingLayerID: 1920631189
   m_SortingLayer: 2
   m_SortingOrder: 46
-  m_Sprite: {fileID: 21300000, guid: 757ac481dbacdd748966726fa156134b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ab08ebcaa18fe48e694f054d4d1168d9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.87, y: 0.5}
+  m_Size: {x: 16.685682, y: 23.88}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &1262767981171442128
@@ -2204,6 +2348,8 @@ MonoBehaviour:
   playerHasKey_lines: []
   itemName: Key
   description: This is an interactable object.
+  requiresPack: 0
+  requiresKey: 0
   canBePickedUp: 1
   canBeUsed: 0
   hasBeenClicked: 0
@@ -2222,18 +2368,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -1.0941342, y: 0.41195583}
+  m_Offset: {x: -0.74072576, y: -2.3830338}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 16.685682, y: 23.88}
-    newSize: {x: 0.87, y: 0.5}
+    newSize: {x: 16.685682, y: 23.88}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 9.707279, y: 12.372364}
+  m_Size: {x: 12.145096, y: 18.961948}
   m_EdgeRadius: 0
 --- !u!114 &614628248
 MonoBehaviour:
@@ -2515,6 +2661,8 @@ MonoBehaviour:
   playerHasKey_lines: []
   itemName: Interactable
   description: This is an interactable object.
+  requiresPack: 0
+  requiresKey: 0
   canBePickedUp: 0
   canBeUsed: 0
   hasBeenClicked: 0
@@ -2656,6 +2804,8 @@ MonoBehaviour:
   playerHasKey_lines: []
   itemName: Interactable
   description: This is an interactable object.
+  requiresPack: 0
+  requiresKey: 0
   canBePickedUp: 0
   canBeUsed: 0
   hasBeenClicked: 0
@@ -2893,6 +3043,8 @@ MonoBehaviour:
   playerHasKey_lines: []
   itemName: Interactable
   description: This is an interactable object.
+  requiresPack: 0
+  requiresKey: 0
   canBePickedUp: 0
   canBeUsed: 0
   hasBeenClicked: 0
@@ -3132,20 +3284,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f21b893f599c4aa40a9624b106e0360d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lines:
-  - text: /size:up/ DEEZE /size:init/...
-    isPlayer: 1
-    isSkippable: 1
-    speaker: Protag-Kun
-  - text: /size:up/ /size:up/ NUDDZ /size:init/ hihihii...
-    isPlayer: 1
-    isSkippable: 1
-    speaker: Protag-Kun
+  lines: []
   alt_lines: []
-  playerHasPack_lines: []
+  playerHasPack_lines:
+  - text: Natuerlich in... einer Schale Erdnuesse.
+    isPlayer: 1
+    isSkippable: 1
+    speaker: Protag-Kun
   playerHasKey_lines: []
   itemName: Penutz
   description: This is an interactable object.
+  requiresPack: 0
+  requiresKey: 0
   canBePickedUp: 0
   canBeUsed: 0
   hasBeenClicked: 0
@@ -4545,15 +4695,38 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lines:
-  - text: DOOOOR
+  - text: Ich glaube ich habe etwas wichtiges vergessen...
     isPlayer: 1
     isSkippable: 1
     speaker: Protag-Kun
   alt_lines: []
-  playerHasPack_lines: []
-  playerHasKey_lines: []
+  playerHasPack_lines:
+  - text: Oh stimmt ja, die ist noch zu.
+    isPlayer: 0
+    isSkippable: 1
+    speaker: Hank
+  - text: "Der Schl\xFCssel muss hier irgendwo rumliegen. W\xE4rst du so nett?"
+    isPlayer: 0
+    isSkippable: 1
+    speaker: Hank
+  - text: /sound:sigh/*sigh* ... Klar doch.
+    isPlayer: 1
+    isSkippable: 1
+    speaker: Protag-Kun
+  playerHasKey_lines:
+  - text: "Hals- und Beinbruch, Kleine. Daf\xFCr gehen nachher ein paar auf\u2019s
+      Haus!"
+    isPlayer: 0
+    isSkippable: 0
+    speaker: Hank
+  - text: Danke dir, bis nachher Hank.
+    isPlayer: 1
+    isSkippable: 1
+    speaker: Protag-Kun
   itemName: Interactable
   description: This is an interactable object.
+  requiresPack: 1
+  requiresKey: 1
   canBePickedUp: 0
   canBeUsed: 0
   hasBeenClicked: 0
