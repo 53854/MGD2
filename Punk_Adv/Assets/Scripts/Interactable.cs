@@ -110,7 +110,7 @@ public class Interactable : MonoBehaviour
             }
         }
 
-        if (dm.state == State.Deactivate) dm.Show(dialog);
+        if (dm.state == State.Deactivate && dialog.Count > 0) dm.Show(dialog);
         hasBeenClicked = true;
     }
 

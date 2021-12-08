@@ -2103,6 +2103,7 @@ GameObject:
   - component: {fileID: 6982020296167455349}
   - component: {fileID: 1262767981171442128}
   - component: {fileID: 1262767981171442129}
+  - component: {fileID: 614628248}
   m_Layer: 0
   m_Name: "Itm_Schl\xFCssel"
   m_TagString: Interactable
@@ -2189,13 +2190,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f21b893f599c4aa40a9624b106e0360d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lines: []
+  lines:
+  - text: /size:up//size:up//size:up/ AHA /size:init/
+    isPlayer: 1
+    isSkippable: 0
+    speaker: Protag-Kun
   alt_lines: []
   playerHasPack_lines: []
   playerHasKey_lines: []
   itemName: Key
   description: This is an interactable object.
-  canBePickedUp: 0
+  canBePickedUp: 1
   canBeUsed: 0
   hasBeenClicked: 0
   outLine: {fileID: 0}
@@ -2226,6 +2231,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 9.707279, y: 12.372364}
   m_EdgeRadius: 0
+--- !u!114 &614628248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3977752795826264936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cec8c5945e63be14abc98d412f2ac7b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4005331317302548018
 GameObject:
   m_ObjectHideFlags: 0
@@ -3024,6 +3041,7 @@ GameObject:
   - component: {fileID: 1498717733565854978}
   - component: {fileID: 1498717733565854976}
   - component: {fileID: 1498717733565854977}
+  - component: {fileID: 272653041}
   m_Layer: 0
   m_Name: Itm_Schale
   m_TagString: Interactable
@@ -3128,7 +3146,7 @@ MonoBehaviour:
   canBeUsed: 0
   hasBeenClicked: 0
   outLine: {fileID: 5998569597389197924}
-  altSprite: {fileID: 0}
+  altSprite: {fileID: 21300000, guid: 7b46061acd24a46578bb71d5e396af79, type: 3}
 --- !u!61 &1498717733565854977
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3155,6 +3173,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 36.969303, y: 29.033012}
   m_EdgeRadius: 0.13
+--- !u!114 &272653041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5314411640758064295}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa470e04f6ebbb74ba4d3c5e30d1c3af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key: {fileID: 3977752795826264936}
 --- !u!1 &5802913129775584453
 GameObject:
   m_ObjectHideFlags: 0
@@ -4395,6 +4426,7 @@ GameObject:
   - component: {fileID: 1357999968167795287}
   - component: {fileID: 103630272}
   - component: {fileID: 103630273}
+  - component: {fileID: 1921607358}
   m_Layer: 0
   m_Name: Main_Door
   m_TagString: Interactable
@@ -4523,6 +4555,18 @@ MonoBehaviour:
   hasBeenClicked: 0
   outLine: {fileID: 8978392185091877007}
   altSprite: {fileID: 0}
+--- !u!114 &1921607358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8269625325746355363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f84a626f552447341b51027f00bc5355, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8392087871428180289
 GameObject:
   m_ObjectHideFlags: 0

@@ -10,6 +10,5 @@ public class Pack : MonoBehaviour
         GetComponent<BoxCollider2D>().enabled = false;
         GetComponent<Interactable>().outLine.enabled = false;
         GetComponent<SpriteRenderer>().enabled = false;
-
     }
 }
