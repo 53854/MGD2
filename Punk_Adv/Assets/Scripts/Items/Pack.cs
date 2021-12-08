@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Pack : MonoBehaviour
 {
+
     private void OnMouseDown()
     {
         FindObjectOfType<Controller>().hasPack = true;
