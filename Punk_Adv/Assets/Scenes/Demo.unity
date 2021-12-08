@@ -849,10 +849,6 @@ PrefabInstance:
       value: GameManager
       objectReference: {fileID: 0}
     - target: {fileID: 5328325782640546677, guid: f0e91e017c161824eb2637d298cc1ee3, type: 3}
-      propertyPath: speed
-      value: 0.55
-      objectReference: {fileID: 0}
-    - target: {fileID: 5328325782640546677, guid: f0e91e017c161824eb2637d298cc1ee3, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 486693243}
