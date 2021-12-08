@@ -354,6 +354,10 @@ MonoBehaviour:
     isPlayer: 1
     isSkippable: 1
     speaker: Protag-Kun
+  - text: asdf
+    isPlayer: 1
+    isSkippable: 1
+    speaker: Protag-Kun
   alt_lines: []
   playerHasPack_lines: []
   playerHasKey_lines: []
