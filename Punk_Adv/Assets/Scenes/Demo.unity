@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311992, g: 0.38074034, b: 0.35872713, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -361,6 +361,74 @@ PrefabInstance:
     - target: {fileID: 4094011683184477044, guid: d536fa71dd00cf349a228e41212ace48, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8206358605804713633, guid: d536fa71dd00cf349a228e41212ace48, type: 3}
+      propertyPath: Emotion._sprite.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8206358605804713633, guid: d536fa71dd00cf349a228e41212ace48, type: 3}
+      propertyPath: Emotion._emotion.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8206358605804713633, guid: d536fa71dd00cf349a228e41212ace48, type: 3}
+      propertyPath: Emotion._sprite.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: 108005c90ff76430cac5bdf59b156275, type: 3}
+    - target: {fileID: 8206358605804713633, guid: d536fa71dd00cf349a228e41212ace48, type: 3}
+      propertyPath: Emotion._sprite.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: 108005c90ff76430cac5bdf59b156275, type: 3}
+    - target: {fileID: 8206358605804713633, guid: d536fa71dd00cf349a228e41212ace48, type: 3}
+      propertyPath: Emotion._sprite.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300000, guid: 108005c90ff76430cac5bdf59b156275, type: 3}
+    - target: {fileID: 8206358605804713633, guid: d536fa71dd00cf349a228e41212ace48, type: 3}
+      propertyPath: Emotion._emotion.Array.data[1]
+      value: Happy
+      objectReference: {fileID: 0}
+    - target: {fileID: 8206358605804713633, guid: d536fa71dd00cf349a228e41212ace48, type: 3}
+      propertyPath: Emotion._emotion.Array.data[2]
+      value: Sad
+      objectReference: {fileID: 0}
+    - target: {fileID: 8206358606436790751, guid: d536fa71dd00cf349a228e41212ace48, type: 3}
+      propertyPath: Emotion._sprite.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: b4dc5fab8c0b245b7b1b7dd56621206e, type: 3}
+    - target: {fileID: 8206358606436790751, guid: d536fa71dd00cf349a228e41212ace48, type: 3}
+      propertyPath: Emotion._sprite.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: b4dc5fab8c0b245b7b1b7dd56621206e, type: 3}
+    - target: {fileID: 8206358606436790751, guid: d536fa71dd00cf349a228e41212ace48, type: 3}
+      propertyPath: Emotion._sprite.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300000, guid: b4dc5fab8c0b245b7b1b7dd56621206e, type: 3}
+    - target: {fileID: 8206358606497157388, guid: d536fa71dd00cf349a228e41212ace48, type: 3}
+      propertyPath: Emotion._sprite.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8206358606497157388, guid: d536fa71dd00cf349a228e41212ace48, type: 3}
+      propertyPath: Emotion._emotion.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8206358606497157388, guid: d536fa71dd00cf349a228e41212ace48, type: 3}
+      propertyPath: Emotion._sprite.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: c4700e300439c4bc089b750adda31348, type: 3}
+    - target: {fileID: 8206358606497157388, guid: d536fa71dd00cf349a228e41212ace48, type: 3}
+      propertyPath: Emotion._sprite.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: 6ce80ac8822de496ea7050234b6ee520, type: 3}
+    - target: {fileID: 8206358606497157388, guid: d536fa71dd00cf349a228e41212ace48, type: 3}
+      propertyPath: Emotion._sprite.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300000, guid: 6e24679f7f8e342c5855f8a80ac8a86d, type: 3}
+    - target: {fileID: 8206358606497157388, guid: d536fa71dd00cf349a228e41212ace48, type: 3}
+      propertyPath: Emotion._emotion.Array.data[1]
+      value: Sad
+      objectReference: {fileID: 0}
+    - target: {fileID: 8206358606497157388, guid: d536fa71dd00cf349a228e41212ace48, type: 3}
+      propertyPath: Emotion._emotion.Array.data[2]
+      value: Happy
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d536fa71dd00cf349a228e41212ace48, type: 3}
