@@ -236,6 +236,8 @@ MonoBehaviour:
   playerHasKey_lines: []
   itemName: Interactable
   description: This is an interactable object.
+  requiresPack: 0
+  requiresKey: 0
   canBePickedUp: 0
   canBeUsed: 0
   hasBeenClicked: 0
@@ -568,6 +570,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1291644924633095585, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: m_Size.x
+      value: 22.355633
+      objectReference: {fileID: 0}
+    - target: {fileID: 1291644924633095585, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.6808419
+      objectReference: {fileID: 0}
+    - target: {fileID: 1989281342735805922, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 2836654548923944529, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -1135,6 +1149,8 @@ MonoBehaviour:
   playerHasKey_lines: []
   itemName: Interactable
   description: This is an interactable object.
+  requiresPack: 0
+  requiresKey: 0
   canBePickedUp: 0
   canBeUsed: 0
   hasBeenClicked: 0

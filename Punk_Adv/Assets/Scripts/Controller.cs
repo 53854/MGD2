@@ -41,15 +41,10 @@ public class Controller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         player.GetComponent<Animator>().SetBool("isWalking", isMoving);
-
-
-        Debug.Log(dialogManager.state);
 
         if (Input.GetMouseButtonDown(0) && dialogManager.state == State.Deactivate)
         {
-
             mousePos = Input.mousePosition;
 
             mousePosWorld = Camera.main.ScreenToWorldPoint(mousePos);
