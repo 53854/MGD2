@@ -233,8 +233,6 @@ MonoBehaviour:
   playerHasKey_lines: []
   itemName: A Radio
   description: This is an interactable object.
-  requiresPack: 0
-  requiresKey: 0
   canBePickedUp: 0
   canBeUsed: 0
   hasBeenClicked: 0
@@ -361,8 +359,6 @@ MonoBehaviour:
   playerHasKey_lines: []
   itemName: Interactable
   description: This is an interactable object.
-  requiresPack: 0
-  requiresKey: 0
   canBePickedUp: 0
   canBeUsed: 0
   hasBeenClicked: 0
@@ -422,7 +418,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 564877561030184960}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.907, y: 9.157, z: -0.5}
+  m_LocalPosition: {x: -4.907, y: 9.157, z: 0}
   m_LocalScale: {x: 0.04935163, y: 0.04935163, z: 0.04935163}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -522,8 +518,6 @@ MonoBehaviour:
   playerHasKey_lines: []
   itemName: NotDrugs
   description: This is an interactable object.
-  requiresPack: 0
-  requiresKey: 0
   canBePickedUp: 1
   canBeUsed: 0
   hasBeenClicked: 0
@@ -917,8 +911,6 @@ MonoBehaviour:
   playerHasKey_lines: []
   itemName: Du
   description: This is an interactable object.
-  requiresPack: 0
-  requiresKey: 0
   canBePickedUp: 0
   canBeUsed: 0
   hasBeenClicked: 0
@@ -1216,8 +1208,6 @@ MonoBehaviour:
   playerHasKey_lines: []
   itemName: Interactable
   description: This is an interactable object.
-  requiresPack: 0
-  requiresKey: 0
   canBePickedUp: 0
   canBeUsed: 0
   hasBeenClicked: 0
@@ -1526,8 +1516,6 @@ MonoBehaviour:
   playerHasKey_lines: []
   itemName: Interactable
   description: This is an interactable object.
-  requiresPack: 0
-  requiresKey: 0
   canBePickedUp: 0
   canBeUsed: 0
   hasBeenClicked: 0
@@ -1761,8 +1749,6 @@ MonoBehaviour:
   playerHasKey_lines: []
   itemName: Interactable
   description: This is an interactable object.
-  requiresPack: 0
-  requiresKey: 0
   canBePickedUp: 0
   canBeUsed: 0
   hasBeenClicked: 0
@@ -2214,8 +2200,6 @@ MonoBehaviour:
   playerHasKey_lines: []
   itemName: Key
   description: This is an interactable object.
-  requiresPack: 0
-  requiresKey: 0
   canBePickedUp: 1
   canBeUsed: 0
   hasBeenClicked: 0
@@ -2527,8 +2511,6 @@ MonoBehaviour:
   playerHasKey_lines: []
   itemName: Interactable
   description: This is an interactable object.
-  requiresPack: 0
-  requiresKey: 0
   canBePickedUp: 0
   canBeUsed: 0
   hasBeenClicked: 0
@@ -2670,8 +2652,6 @@ MonoBehaviour:
   playerHasKey_lines: []
   itemName: Interactable
   description: This is an interactable object.
-  requiresPack: 0
-  requiresKey: 0
   canBePickedUp: 0
   canBeUsed: 0
   hasBeenClicked: 0
@@ -2909,8 +2889,6 @@ MonoBehaviour:
   playerHasKey_lines: []
   itemName: Interactable
   description: This is an interactable object.
-  requiresPack: 0
-  requiresKey: 0
   canBePickedUp: 0
   canBeUsed: 0
   hasBeenClicked: 0
@@ -3150,18 +3128,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f21b893f599c4aa40a9624b106e0360d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lines: []
+  lines:
+  - text: /size:up/ DEEZE /size:init/...
+    isPlayer: 1
+    isSkippable: 1
+    speaker: Protag-Kun
+  - text: /size:up/ /size:up/ NUDDZ /size:init/ hihihii...
+    isPlayer: 1
+    isSkippable: 1
+    speaker: Protag-Kun
   alt_lines: []
-  playerHasPack_lines:
-  - text: "Nat\xFCrlich in... einer Schale Erdnuesse."
-    isPlayer: 0
-    isSkippable: 0
-    speaker: 
+  playerHasPack_lines: []
   playerHasKey_lines: []
   itemName: Penutz
   description: This is an interactable object.
-  requiresPack: 0
-  requiresKey: 0
   canBePickedUp: 0
   canBeUsed: 0
   hasBeenClicked: 0
@@ -4561,38 +4541,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lines:
-  - text: Ich glaube ich habe etwas wichtiges vergessen...
+  - text: DOOOOR
     isPlayer: 1
     isSkippable: 1
     speaker: Protag-Kun
   alt_lines: []
-  playerHasPack_lines:
-  - text: Oh stimmt ja, die ist noch zu.
-    isPlayer: 0
-    isSkippable: 1
-    speaker: Hank
-  - text: "Der Schl\xFCssel muss hier irgendwo rumliegen. W\xE4rst du so nett?"
-    isPlayer: 0
-    isSkippable: 1
-    speaker: Hank
-  - text: /sound:sigh/*sigh*... Klar doch.
-    isPlayer: 1
-    isSkippable: 1
-    speaker: Protag-Kun
-  playerHasKey_lines:
-  - text: "Hals- und Beinbruch, Kleine. Daf\xFCr gehen nachher ein paar auf\u2019s
-      Haus!"
-    isPlayer: 0
-    isSkippable: 1
-    speaker: Hank
-  - text: Danke dir, bis nachher Hank.
-    isPlayer: 1
-    isSkippable: 1
-    speaker: Protag-Kun
+  playerHasPack_lines: []
+  playerHasKey_lines: []
   itemName: Interactable
   description: This is an interactable object.
-  requiresPack: 0
-  requiresKey: 0
   canBePickedUp: 0
   canBeUsed: 0
   hasBeenClicked: 0
