@@ -236,6 +236,8 @@ MonoBehaviour:
   playerHasKey_lines: []
   itemName: Interactable
   description: This is an interactable object.
+  requiresPack: 0
+  requiresKey: 0
   canBePickedUp: 0
   canBeUsed: 0
   hasBeenClicked: 0
@@ -1143,6 +1145,8 @@ MonoBehaviour:
   playerHasKey_lines: []
   itemName: Interactable
   description: This is an interactable object.
+  requiresPack: 0
+  requiresKey: 0
   canBePickedUp: 0
   canBeUsed: 0
   hasBeenClicked: 0

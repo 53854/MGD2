@@ -13,6 +13,9 @@ public class Interactable : MonoBehaviour
     public string itemName = "Interactable";
     public string description = "This is an interactable object.";
 
+    public bool requiresPack = false;
+    public bool requiresKey = false;
+
     public bool canBePickedUp = false;
     [HideInInspector]
     public bool canBeUsed = false;
@@ -77,6 +80,8 @@ public class Interactable : MonoBehaviour
 
         if (altSprite != null)
         {
+            if(requiresKey){if(!con.hasKey) return;}
+            if(requiresPack){if(!con.hasPack) return;}
             GetComponent<SpriteRenderer>().sprite = altSprite;
         }
 

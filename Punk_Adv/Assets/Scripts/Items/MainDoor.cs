@@ -8,12 +8,7 @@ public class MainDoor : MonoBehaviour
     BoxCollider2D bc2d;
     void Start()
     {
+        bc2d = GetComponent<BoxCollider2D>();
         con = FindObjectOfType<Controller>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        bc2d.enabled = con.hasKey && con.hasPack;
     }
 }

@@ -14,6 +14,7 @@ public class Nutz : MonoBehaviour
     {
         key.SetActive(false);
         con = FindObjectOfType<Controller>();
+        bc2d = GetComponent<BoxCollider2D>();
         bc2d.enabled = false;
         interactable = GetComponent<Interactable>();
     }
