@@ -2366,7 +2366,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lines:
-  - text: /size:up//size:up//size:up/ AHA /size:init/
+  - text: Finally, the key!
+    isPlayer: 1
+    isSkippable: 0
+    speaker: Protag-Kun
+  - text: I was about to go /click/./click/./click/./click/ nutz.
+    isPlayer: 1
+    isSkippable: 0
+    speaker: Protag-Kun
+  - text: "(Ich hoffe Ashley hat den nicht geh\xF6rt...)"
     isPlayer: 1
     isSkippable: 0
     speaker: Protag-Kun

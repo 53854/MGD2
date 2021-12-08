@@ -356,38 +356,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1262767981171442128, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
-      propertyPath: lines.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1262767981171442128, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
-      propertyPath: lines.Array.data[0].text
-      value: Finally, the key!
-      objectReference: {fileID: 0}
-    - target: {fileID: 1262767981171442128, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
-      propertyPath: lines.Array.data[1].text
-      value: I was about to go /click/./click/./click/./click/ nutz.
-      objectReference: {fileID: 0}
-    - target: {fileID: 1262767981171442128, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
-      propertyPath: lines.Array.data[2].text
-      value: "(Ich hoffe Ashley hat den nicht geh\xF6rt...)"
-      objectReference: {fileID: 0}
-    - target: {fileID: 1262767981171442128, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
-      propertyPath: lines.Array.data[1].speaker
-      value: Protag-Kun
-      objectReference: {fileID: 0}
-    - target: {fileID: 1262767981171442128, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
-      propertyPath: lines.Array.data[2].speaker
-      value: Protag-Kun
-      objectReference: {fileID: 0}
-    - target: {fileID: 1262767981171442128, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
-      propertyPath: lines.Array.data[1].isPlayer
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1262767981171442128, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
-      propertyPath: lines.Array.data[2].isPlayer
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2836654548923944529, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
       propertyPath: m_RootOrder
       value: 4
