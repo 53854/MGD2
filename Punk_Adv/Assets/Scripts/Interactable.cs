@@ -9,7 +9,9 @@ public class Interactable : MonoBehaviour
     public List<textLine> lines;
     public List<textLine> alt_lines;
     public List<textLine> playerHasPack_lines;
+    public List<textLine> alt_playerHasPack_lines;
     public List<textLine> playerHasKey_lines;
+    public List<textLine> alt_playerHasKey_lines;
     public string itemName = "Interactable";
     public string description = "This is an interactable object.";
 
@@ -21,6 +23,8 @@ public class Interactable : MonoBehaviour
     public bool canBeUsed = false;
     [HideInInspector]
     public bool hasBeenClicked = false;
+    public bool hasBeenClickedWithPack = false;
+    public bool hasBeenClickedWithKey = false;
     public SpriteRenderer outLine = null;
     public Sprite altSprite = null;
 
@@ -90,14 +94,22 @@ public class Interactable : MonoBehaviour
         if (dialog.Count > 0) dialog.Clear();
         else if (playerHasKey_lines.Count > 0 && con.hasKey)
         {
-            foreach (textLine line in playerHasKey_lines)
+            if (alt_playerHasKey_lines.Count == 0) alt_playerHasKey_lines = playerHasKey_lines;
+
+            List<textLine> temp = hasBeenClickedWithKey ? alt_playerHasKey_lines : playerHasKey_lines;
+
+            foreach (textLine line in temp)
             {
                 dialog.Add(new DialogData(line.text, line.speaker, null, line.isSkippable));
             }
         }
         else if (playerHasPack_lines.Count > 0 && con.hasPack)
         {
-            foreach (textLine line in playerHasPack_lines)
+            if (alt_playerHasPack_lines.Count == 0) alt_playerHasPack_lines = playerHasPack_lines;
+
+            List<textLine> temp = hasBeenClickedWithPack ? alt_playerHasPack_lines : playerHasPack_lines;
+
+            foreach (textLine line in temp)
             {
                 dialog.Add(new DialogData(line.text, line.speaker, null, line.isSkippable));
             }
@@ -118,6 +130,8 @@ public class Interactable : MonoBehaviour
 
         if (dm.state == State.Deactivate && dialog.Count > 0) dm.Show(dialog);
         hasBeenClicked = true;
+        if(con.hasPack) hasBeenClickedWithPack = true;
+        if(con.hasKey) hasBeenClickedWithKey = true;
     }
 
 }
