@@ -4,7 +4,11 @@ using UnityEngine;
 
 [RequireComponent(typeof(AudioSource))]
 public class InteractibleAudio : MonoBehaviour
-{
+{   
+    [Tooltip("The volume which all other sources will be turned down to whilst this one is playing \n 0 = no volume, 1 = full volume")]
+    [Range(0, 1)]
+    public float LowerVolumeLevel = 1;
+
     AudioSource audioSource;
 
     private void Start()
