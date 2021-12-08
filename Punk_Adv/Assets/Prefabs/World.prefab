@@ -230,7 +230,9 @@ MonoBehaviour:
     speaker: Protag-Kun
   alt_lines: []
   playerHasPack_lines: []
+  alt_playerHasPack_lines: []
   playerHasKey_lines: []
+  alt_playerHasKey_lines: []
   itemName: A Radio
   description: This is an interactable object.
   requiresPack: 0
@@ -238,6 +240,8 @@ MonoBehaviour:
   canBePickedUp: 0
   canBeUsed: 0
   hasBeenClicked: 0
+  hasBeenClickedWithPack: 0
+  hasBeenClickedWithKey: 0
   outLine: {fileID: 6205908634580108910}
   altSprite: {fileID: 0}
 --- !u!114 &1620697756
@@ -352,7 +356,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lines:
-  - text: Schmacko.
+  - text: Sieht nicht sehr schmackhaft aus.
     isPlayer: 1
     isSkippable: 1
     speaker: Protag-Kun
@@ -381,11 +385,13 @@ MonoBehaviour:
     isPlayer: 1
     isSkippable: 1
     speaker: Protag-Kun
+  alt_playerHasPack_lines: []
   playerHasKey_lines:
   - text: "Ich gehe n\xE4chstes Mal ins Klo kotzen..."
     isPlayer: 1
     isSkippable: 1
     speaker: Protag-Kun
+  alt_playerHasKey_lines: []
   itemName: Interactable
   description: This is an interactable object.
   requiresPack: 0
@@ -393,6 +399,8 @@ MonoBehaviour:
   canBePickedUp: 0
   canBeUsed: 0
   hasBeenClicked: 0
+  hasBeenClickedWithPack: 0
+  hasBeenClickedWithKey: 0
   outLine: {fileID: 323146549203764073}
   altSprite: {fileID: 0}
 --- !u!61 &1333858328
@@ -524,27 +532,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lines:
-  - text: Paket erhalten.
+  - text: /size:up/Paket erhalten./size:init/
     isPlayer: 0
     isSkippable: 0
-    speaker: 
-  - text: "Kannst dich auf mich verlassen, ruh\u2019 deine m\xFCden Knochen ruhig
-      etwas aus."
+    speaker: Game
+  - text: "Kannst dich auf mich verlassen, ruh\u2019 deine mueden Knochen ruhig etwas
+      aus."
     isPlayer: 1
     isSkippable: 0
     speaker: Protag-Kun
-  - text: " /sound:hankhaha/Vorsicht Kleine, meine Knochen sind noch jung und knackig.
-      Auch wenn ich schon \xE4lter bin, als du je sein wirst, hahaha!"
+  - text: Vorsicht Kleine, meine Knochen sind noch jung und knackig.
     isPlayer: 0
     isSkippable: 0
     speaker: Hank
-  - text: "Haha stimmt, du h\xE4ltst dich gut in Form."
+  - text: /sound:hankhaha/Auch wenn ich schon aelter bin, als du je sein wirst, hahaha!
+    isPlayer: 0
+    isSkippable: 0
+    speaker: Hank
+  - text: Haha stimmt, du haeltst dich gut in Form.
     isPlayer: 1
     isSkippable: 0
     speaker: Protag-Kun
   alt_lines: []
   playerHasPack_lines: []
+  alt_playerHasPack_lines: []
   playerHasKey_lines: []
+  alt_playerHasKey_lines: []
   itemName: NotDrugs
   description: This is an interactable object.
   requiresPack: 0
@@ -552,6 +565,8 @@ MonoBehaviour:
   canBePickedUp: 1
   canBeUsed: 0
   hasBeenClicked: 0
+  hasBeenClickedWithPack: 0
+  hasBeenClickedWithKey: 0
   outLine: {fileID: 2294187364228353116}
   altSprite: {fileID: 0}
 --- !u!61 &1291644924633095585
@@ -1048,7 +1063,9 @@ MonoBehaviour:
     speaker: Protag-Kun
   alt_lines: []
   playerHasPack_lines: []
+  alt_playerHasPack_lines: []
   playerHasKey_lines: []
+  alt_playerHasKey_lines: []
   itemName: Du
   description: This is an interactable object.
   requiresPack: 0
@@ -1056,6 +1073,8 @@ MonoBehaviour:
   canBePickedUp: 0
   canBeUsed: 0
   hasBeenClicked: 0
+  hasBeenClickedWithPack: 0
+  hasBeenClickedWithKey: 0
   outLine: {fileID: 8796020189441202270}
   altSprite: {fileID: 0}
 --- !u!61 &1318904331666363270
@@ -1347,7 +1366,9 @@ MonoBehaviour:
     speaker: Protag-Kun
   alt_lines: []
   playerHasPack_lines: []
+  alt_playerHasPack_lines: []
   playerHasKey_lines: []
+  alt_playerHasKey_lines: []
   itemName: Interactable
   description: This is an interactable object.
   requiresPack: 0
@@ -1355,6 +1376,8 @@ MonoBehaviour:
   canBePickedUp: 0
   canBeUsed: 0
   hasBeenClicked: 0
+  hasBeenClickedWithPack: 0
+  hasBeenClickedWithKey: 0
   outLine: {fileID: 2148816146801488724}
   altSprite: {fileID: 0}
 --- !u!1 &1999420794413878086
@@ -1657,7 +1680,9 @@ MonoBehaviour:
     speaker: Protag-Kun
   alt_lines: []
   playerHasPack_lines: []
+  alt_playerHasPack_lines: []
   playerHasKey_lines: []
+  alt_playerHasKey_lines: []
   itemName: Interactable
   description: This is an interactable object.
   requiresPack: 0
@@ -1665,6 +1690,8 @@ MonoBehaviour:
   canBePickedUp: 0
   canBeUsed: 0
   hasBeenClicked: 0
+  hasBeenClickedWithPack: 0
+  hasBeenClickedWithKey: 0
   outLine: {fileID: 3946658316838056428}
   altSprite: {fileID: 0}
 --- !u!1 &2618623761328663020
@@ -1892,7 +1919,9 @@ MonoBehaviour:
     speaker: Protag-Kun
   alt_lines: []
   playerHasPack_lines: []
+  alt_playerHasPack_lines: []
   playerHasKey_lines: []
+  alt_playerHasKey_lines: []
   itemName: Interactable
   description: This is an interactable object.
   requiresPack: 0
@@ -1900,6 +1929,8 @@ MonoBehaviour:
   canBePickedUp: 0
   canBeUsed: 0
   hasBeenClicked: 0
+  hasBeenClickedWithPack: 0
+  hasBeenClickedWithKey: 0
   outLine: {fileID: 508669981728750017}
   altSprite: {fileID: 0}
 --- !u!1 &2742311172395646920
@@ -2345,7 +2376,9 @@ MonoBehaviour:
     speaker: Protag-Kun
   alt_lines: []
   playerHasPack_lines: []
+  alt_playerHasPack_lines: []
   playerHasKey_lines: []
+  alt_playerHasKey_lines: []
   itemName: Key
   description: This is an interactable object.
   requiresPack: 0
@@ -2353,6 +2386,8 @@ MonoBehaviour:
   canBePickedUp: 1
   canBeUsed: 0
   hasBeenClicked: 0
+  hasBeenClickedWithPack: 0
+  hasBeenClickedWithKey: 0
   outLine: {fileID: 0}
   altSprite: {fileID: 0}
 --- !u!61 &1262767981171442129
@@ -2658,7 +2693,9 @@ MonoBehaviour:
     speaker: Protag-Kun
   alt_lines: []
   playerHasPack_lines: []
+  alt_playerHasPack_lines: []
   playerHasKey_lines: []
+  alt_playerHasKey_lines: []
   itemName: Interactable
   description: This is an interactable object.
   requiresPack: 0
@@ -2666,6 +2703,8 @@ MonoBehaviour:
   canBePickedUp: 0
   canBeUsed: 0
   hasBeenClicked: 0
+  hasBeenClickedWithPack: 0
+  hasBeenClickedWithKey: 0
   outLine: {fileID: 5279498728552093830}
   altSprite: {fileID: 0}
 --- !u!1 &4838921132313588065
@@ -2801,7 +2840,9 @@ MonoBehaviour:
     speaker: Protag-Kun
   alt_lines: []
   playerHasPack_lines: []
+  alt_playerHasPack_lines: []
   playerHasKey_lines: []
+  alt_playerHasKey_lines: []
   itemName: Interactable
   description: This is an interactable object.
   requiresPack: 0
@@ -2809,6 +2850,8 @@ MonoBehaviour:
   canBePickedUp: 0
   canBeUsed: 0
   hasBeenClicked: 0
+  hasBeenClickedWithPack: 0
+  hasBeenClickedWithKey: 0
   outLine: {fileID: 6247379747013089869}
   altSprite: {fileID: 0}
 --- !u!1 &5031376342487268895
@@ -3040,7 +3083,9 @@ MonoBehaviour:
     speaker: Protag-Kun
   alt_lines: []
   playerHasPack_lines: []
+  alt_playerHasPack_lines: []
   playerHasKey_lines: []
+  alt_playerHasKey_lines: []
   itemName: Interactable
   description: This is an interactable object.
   requiresPack: 0
@@ -3048,6 +3093,8 @@ MonoBehaviour:
   canBePickedUp: 0
   canBeUsed: 0
   hasBeenClicked: 0
+  hasBeenClickedWithPack: 0
+  hasBeenClickedWithKey: 0
   outLine: {fileID: 2177575310506728782}
   altSprite: {fileID: 0}
 --- !u!1 &5268154687120692286
@@ -3291,7 +3338,9 @@ MonoBehaviour:
     isPlayer: 1
     isSkippable: 1
     speaker: Protag-Kun
+  alt_playerHasPack_lines: []
   playerHasKey_lines: []
+  alt_playerHasKey_lines: []
   itemName: Penutz
   description: This is an interactable object.
   requiresPack: 0
@@ -3299,6 +3348,8 @@ MonoBehaviour:
   canBePickedUp: 0
   canBeUsed: 0
   hasBeenClicked: 0
+  hasBeenClickedWithPack: 0
+  hasBeenClickedWithKey: 0
   outLine: {fileID: 5998569597389197924}
   altSprite: {fileID: 21300000, guid: 7b46061acd24a46578bb71d5e396af79, type: 3}
 --- !u!61 &1498717733565854977
@@ -4713,6 +4764,7 @@ MonoBehaviour:
     isPlayer: 1
     isSkippable: 1
     speaker: Protag-Kun
+  alt_playerHasPack_lines: []
   playerHasKey_lines:
   - text: "Hals- und Beinbruch, Kleine. Daf\xFCr gehen nachher ein paar auf\u2019s
       Haus!"
@@ -4723,6 +4775,7 @@ MonoBehaviour:
     isPlayer: 1
     isSkippable: 1
     speaker: Protag-Kun
+  alt_playerHasKey_lines: []
   itemName: Interactable
   description: This is an interactable object.
   requiresPack: 1
@@ -4730,6 +4783,8 @@ MonoBehaviour:
   canBePickedUp: 0
   canBeUsed: 0
   hasBeenClicked: 0
+  hasBeenClickedWithPack: 0
+  hasBeenClickedWithKey: 0
   outLine: {fileID: 8978392185091877007}
   altSprite: {fileID: 0}
 --- !u!114 &1921607358

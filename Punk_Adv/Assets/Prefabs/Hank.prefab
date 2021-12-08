@@ -136,15 +136,13 @@ MonoBehaviour:
     speaker: Hank
   alt_lines: []
   playerHasPack_lines:
-  - text: "Ich w\xFCrde ja selbst gehen, aber ich bin gerade etwas besch\xE4ftigt."
+  - text: Ich wuerde ja selbst gehen, aber ich bin gerade etwas beschaeftigt.
     isPlayer: 0
     isSkippable: 1
     speaker: Hank
-  playerHasKey_lines:
-  - text: 
-    isPlayer: 0
-    isSkippable: 0
-    speaker: 
+  alt_playerHasPack_lines: []
+  playerHasKey_lines: []
+  alt_playerHasKey_lines: []
   itemName: Interactable
   description: This is an interactable object.
   requiresPack: 0
@@ -152,6 +150,8 @@ MonoBehaviour:
   canBePickedUp: 0
   canBeUsed: 0
   hasBeenClicked: 0
+  hasBeenClickedWithPack: 0
+  hasBeenClickedWithKey: 0
   outLine: {fileID: 8435770970717028271}
   altSprite: {fileID: 0}
 --- !u!1 &8435770970717028269

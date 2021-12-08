@@ -211,7 +211,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lines: []
   alt_lines:
-  - text: "Wir h\xF6ren uns sp\xE4ter."
+  - text: Ich glaube Hank will was von dir.
     isPlayer: 0
     isSkippable: 1
     speaker: Ashley
@@ -224,8 +224,8 @@ MonoBehaviour:
     isPlayer: 1
     isSkippable: 1
     speaker: Protag-Kun
-  - text: "Gut, danke! Ich habe eben etwas mitgeh\xF6rt, du hast einen Auftrag von
-      Hank bekommen, richtig?"
+  - text: Gut, danke! Ich habe eben etwas mitgehoert, du hast einen Auftrag von Hank
+      bekommen, richtig?
     isPlayer: 0
     isSkippable: 1
     speaker: Ashley
@@ -238,7 +238,7 @@ MonoBehaviour:
     isPlayer: 1
     isSkippable: 1
     speaker: Protag-Kun
-  - text: "Okay, das h\xF6rt sich doch gut an. Pass trotzdem auf dich auf."
+  - text: Okay, das hoert sich doch gut an. Pass trotzdem auf dich auf.
     isPlayer: 0
     isSkippable: 1
     speaker: Ashley
@@ -246,11 +246,21 @@ MonoBehaviour:
     isPlayer: 0
     isSkippable: 1
     speaker: Hank
-  - text: "/sound:ashleyhihi/Wir h\xF6ren uns sp\xE4ter."
+  - text: /sound:ashleyhihi/Wir hoeren uns spaeter.
     isPlayer: 0
     isSkippable: 1
     speaker: Ashley
-  playerHasKey_lines: []
+  alt_playerHasPack_lines:
+  - text: /sound:ashleyhihi/Wir hoeren uns spaeter.
+    isPlayer: 0
+    isSkippable: 1
+    speaker: Ashley
+  playerHasKey_lines:
+  - text: Sei vorsichtig.
+    isPlayer: 0
+    isSkippable: 1
+    speaker: Ashley
+  alt_playerHasKey_lines: []
   itemName: Interactable
   description: This is an interactable object.
   requiresPack: 0
@@ -258,5 +268,7 @@ MonoBehaviour:
   canBePickedUp: 0
   canBeUsed: 0
   hasBeenClicked: 0
+  hasBeenClickedWithPack: 0
+  hasBeenClickedWithKey: 0
   outLine: {fileID: 7688493618252105673}
   altSprite: {fileID: 0}

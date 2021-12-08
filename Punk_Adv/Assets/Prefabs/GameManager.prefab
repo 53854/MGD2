@@ -50,7 +50,7 @@ MonoBehaviour:
   mousePosWorld: {x: 0, y: 0, z: 0}
   mousePosWorld2D: {x: 0, y: 0}
   scale: 2
-  speed: 1
+  speed: 0.55
   isMoving: 0
   isInteracting: 0
   targetPos: {x: 0, y: 0}
