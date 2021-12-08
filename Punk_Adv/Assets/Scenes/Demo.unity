@@ -180,8 +180,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1920631189
-  m_SortingLayer: 2
+  m_SortingLayerID: 687879437
+  m_SortingLayer: 1
   m_SortingOrder: 31
   m_Sprite: {fileID: 446399083, guid: 0a7562dc4aaaa419a9ddc6848ce268eb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -362,7 +362,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
     - target: {fileID: 8206358605804713633, guid: d536fa71dd00cf349a228e41212ace48, type: 3}
       propertyPath: Emotion._sprite.Array.size
       value: 3
@@ -431,12 +430,6 @@ PrefabInstance:
       propertyPath: Emotion._emotion.Array.data[2]
       value: Happy
       objectReference: {fileID: 0}
-=======
-    - target: {fileID: 8206358606436790751, guid: d536fa71dd00cf349a228e41212ace48, type: 3}
-      propertyPath: CallSE.Array.data[0]
-      value: 
-      objectReference: {fileID: 8300000, guid: 57632d966827fcf4bbf6c09b7899fed0, type: 3}
->>>>>>> Stashed changes
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d536fa71dd00cf349a228e41212ace48, type: 3}
 --- !u!114 &325689816 stripped
@@ -575,111 +568,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 103630273, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
-      propertyPath: lines.Array.data[0].text
-      value: Ich glaube ich habe etwas wichtiges vergessen...
+    - target: {fileID: 1291644924633095585, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: m_Size.x
+      value: 22.355633
       objectReference: {fileID: 0}
-    - target: {fileID: 103630273, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
-      propertyPath: playerHasKey_lines.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 103630273, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
-      propertyPath: playerHasPack_lines.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 103630273, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
-      propertyPath: playerHasKey_lines.Array.data[0].text
-      value: "Hals- und Beinbruch, Kleine. Daf\xFCr gehen nachher ein paar auf\u2019s
-        Haus!"
-      objectReference: {fileID: 0}
-    - target: {fileID: 103630273, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
-      propertyPath: playerHasKey_lines.Array.data[1].text
-      value: Danke dir, bis nachher Hank.
-      objectReference: {fileID: 0}
-    - target: {fileID: 103630273, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
-      propertyPath: playerHasPack_lines.Array.data[0].text
-      value: Oh stimmt ja, die ist noch zu.
-      objectReference: {fileID: 0}
-    - target: {fileID: 103630273, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
-      propertyPath: playerHasPack_lines.Array.data[1].text
-      value: "Der Schl\xFCssel muss hier irgendwo rumliegen. W\xE4rst du so nett?"
-      objectReference: {fileID: 0}
-    - target: {fileID: 103630273, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
-      propertyPath: playerHasPack_lines.Array.data[2].text
-      value: /sound:sigh/*sigh* ... klar doch.
-      objectReference: {fileID: 0}
-    - target: {fileID: 103630273, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
-      propertyPath: playerHasKey_lines.Array.data[0].speaker
-      value: Hank
-      objectReference: {fileID: 0}
-    - target: {fileID: 103630273, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
-      propertyPath: playerHasKey_lines.Array.data[1].speaker
-      value: Protag-Kun
-      objectReference: {fileID: 0}
-    - target: {fileID: 103630273, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
-      propertyPath: playerHasKey_lines.Array.data[1].isPlayer
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 103630273, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
-      propertyPath: playerHasPack_lines.Array.data[0].speaker
-      value: Hank
-      objectReference: {fileID: 0}
-    - target: {fileID: 103630273, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
-      propertyPath: playerHasPack_lines.Array.data[1].speaker
-      value: Hank
-      objectReference: {fileID: 0}
-    - target: {fileID: 103630273, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
-      propertyPath: playerHasPack_lines.Array.data[2].speaker
-      value: Protag-Kun
-      objectReference: {fileID: 0}
-    - target: {fileID: 103630273, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
-      propertyPath: playerHasPack_lines.Array.data[2].isPlayer
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 103630273, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
-      propertyPath: playerHasPack_lines.Array.data[0].isSkippable
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 103630273, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
-      propertyPath: playerHasPack_lines.Array.data[1].isSkippable
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 103630273, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
-      propertyPath: playerHasPack_lines.Array.data[2].isSkippable
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1498717733565854976, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
-      propertyPath: lines.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1498717733565854976, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
-      propertyPath: lines.Array.data[0].text
-      value: /size:up/ /size:up/ NUDDZ /size:init/ hihihii...
-      objectReference: {fileID: 0}
-    - target: {fileID: 1498717733565854976, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
-      propertyPath: playerHasPack_lines.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1498717733565854976, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
-      propertyPath: playerHasPack_lines.Array.data[0].text
-      value: "Nat\xFCrlich in der... Schale mit Erdn\xFCssen?"
-      objectReference: {fileID: 0}
-    - target: {fileID: 1498717733565854976, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
-      propertyPath: playerHasPack_lines.Array.data[0].speaker
-      value: Protag-Kun
-      objectReference: {fileID: 0}
-    - target: {fileID: 1498717733565854976, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
-      propertyPath: playerHasPack_lines.Array.data[0].isPlayer
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1498717733565854976, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
-      propertyPath: playerHasPack_lines.Array.data[0].isSkippable
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1905680762818431344, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
-      propertyPath: lines.Array.data[0].text
-      value: "Ich wei\xDF gar nicht mehr, wie oft Hank mir schon eins \xFCbergebraten
-        hat, weil ich in den M\xFClleimer gekotzt habe."
+    - target: {fileID: 1291644924633095585, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.6808419
       objectReference: {fileID: 0}
     - target: {fileID: 2836654548923944529, guid: 1961904f798f4c14186155b1bf45d8d2, type: 3}
       propertyPath: m_RootOrder
@@ -847,6 +742,10 @@ PrefabInstance:
     - target: {fileID: 5328325782640546676, guid: f0e91e017c161824eb2637d298cc1ee3, type: 3}
       propertyPath: m_Name
       value: GameManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 5328325782640546677, guid: f0e91e017c161824eb2637d298cc1ee3, type: 3}
+      propertyPath: speed
+      value: 0.55
       objectReference: {fileID: 0}
     - target: {fileID: 5328325782640546677, guid: f0e91e017c161824eb2637d298cc1ee3, type: 3}
       propertyPath: player
@@ -1074,8 +973,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1920631189
-  m_SortingLayer: 2
+  m_SortingLayerID: 687879437
+  m_SortingLayer: 1
   m_SortingOrder: 30
   m_Sprite: {fileID: 446399083, guid: 0a7562dc4aaaa419a9ddc6848ce268eb, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
@@ -1201,7 +1100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lines:
-  - text: /sound:ashleyhihi/Oh, h-hey...
+  - text: Oh, h-hey...
     isPlayer: 0
     isSkippable: 1
     speaker: Ashley
@@ -1231,7 +1130,7 @@ MonoBehaviour:
     isPlayer: 0
     isSkippable: 1
     speaker: Hank
-  - text: "/sound:ashleyhihi/Wir h\xF6ren uns sp\xE4ter."
+  - text: "Wir h\xF6ren uns sp\xE4ter."
     isPlayer: 0
     isSkippable: 1
     speaker: Ashley
