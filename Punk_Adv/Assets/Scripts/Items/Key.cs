@@ -7,7 +7,7 @@ public class Key : MonoBehaviour
 
     private void OnMouseDown()
     {
-        FindObjectOfType<Controller>().hasPack = true;
+        FindObjectOfType<Controller>().hasKey = true;
         GetComponent<BoxCollider2D>().enabled = false;
         
         GetComponent<SpriteRenderer>().enabled = false;

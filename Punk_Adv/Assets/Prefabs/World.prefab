@@ -223,11 +223,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f21b893f599c4aa40a9624b106e0360d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lines:
-  - text: Der Moderator dieser Radiosendung geht mir echt auf den Sack...
-    isPlayer: 1
-    isSkippable: 1
-    speaker: Protag-Kun
+  lines: []
   alt_lines: []
   playerHasPack_lines: []
   alt_playerHasPack_lines: []
@@ -387,7 +383,7 @@ MonoBehaviour:
     speaker: Protag-Kun
   alt_playerHasPack_lines: []
   playerHasKey_lines:
-  - text: "Ich gehe n\xE4chstes Mal ins Klo kotzen..."
+  - text: Ich gehe naechstes Mal ins Klo kotzen...
     isPlayer: 1
     isSkippable: 1
     speaker: Protag-Kun
@@ -3334,7 +3330,7 @@ MonoBehaviour:
   lines: []
   alt_lines: []
   playerHasPack_lines:
-  - text: Natuerlich in... einer Schale Erdnuesse.
+  - text: Natuerlich ... in einer Schale Erdnuesse.
     isPlayer: 1
     isSkippable: 1
     speaker: Protag-Kun
@@ -4646,15 +4642,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8269625325746355363}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 16.719997, y: 8.31, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0, y: -0.10776518, z: 0, w: 0.99417645}
+  m_LocalPosition: {x: 16.7617, y: 8.1848, z: 0}
+  m_LocalScale: {x: 0.9394491, y: 1.0301931, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6250191299380127222}
   m_Father: {fileID: 2836654548923944529}
   m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -12.373, z: 0}
 --- !u!212 &1357999968167795287
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4696,7 +4692,7 @@ SpriteRenderer:
   m_SortingLayerID: 687879437
   m_SortingLayer: 1
   m_SortingOrder: 6
-  m_Sprite: {fileID: 6700364705355192204, guid: d088eb36564488844934508bdcc7637a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4a81b79e850e0d7418b885495eaa484a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4724,7 +4720,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 4.48, y: 8.38}
+    oldSize: {x: 4.13, y: 8.28}
     newSize: {x: 4.48, y: 8.38}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -4766,7 +4762,7 @@ MonoBehaviour:
     speaker: Protag-Kun
   alt_playerHasPack_lines: []
   playerHasKey_lines:
-  - text: "Hals- und Beinbruch, Kleine. Daf\xFCr gehen nachher ein paar auf\u2019s
+  - text: "Hals- und Beinbruch, Kleine. Dafuer gehen nachher ein paar auf\u2019s
       Haus!"
     isPlayer: 0
     isSkippable: 0
@@ -4775,6 +4771,10 @@ MonoBehaviour:
     isPlayer: 1
     isSkippable: 1
     speaker: Protag-Kun
+  - text: /sound:smoothguitarriff/Thanks for playing the demo.
+    isPlayer: 0
+    isSkippable: 0
+    speaker: Game
   alt_playerHasKey_lines: []
   itemName: Interactable
   description: This is an interactable object.
@@ -4786,7 +4786,7 @@ MonoBehaviour:
   hasBeenClickedWithPack: 0
   hasBeenClickedWithKey: 0
   outLine: {fileID: 8978392185091877007}
-  altSprite: {fileID: 0}
+  altSprite: {fileID: 21300000, guid: f03bee64da9549a4c9f5e018c17e362f, type: 3}
 --- !u!114 &1921607358
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5078,8 +5078,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8996796446395409784}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.0626, y: 0.1872, z: 0}
+  m_LocalScale: {x: 1.0266, y: 0.9953566, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7734564554731256309}
@@ -5126,7 +5126,7 @@ SpriteRenderer:
   m_SortingLayerID: 687879437
   m_SortingLayer: 1
   m_SortingOrder: 5
-  m_Sprite: {fileID: -7156359471907202474, guid: d088eb36564488844934508bdcc7637a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a05afbdf7421ee14ea684c0ed7a1baac, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

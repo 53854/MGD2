@@ -130,7 +130,7 @@ MonoBehaviour:
     isPlayer: 0
     isSkippable: 1
     speaker: Hank
-  - text: "Ich w\xFCrde ja selbst gehen, aber ich bin gerade etwas besch\xE4ftigt."
+  - text: Ich wuerde ja selbst gehen, aber ich bin gerade etwas beschaeftigt.
     isPlayer: 0
     isSkippable: 1
     speaker: Hank

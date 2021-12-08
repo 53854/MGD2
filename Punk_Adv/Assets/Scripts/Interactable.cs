@@ -82,12 +82,6 @@ public class Interactable : MonoBehaviour
             // play pickup sound
         }
 
-        if (altSprite != null)
-        {
-            if(requiresKey){if(!con.hasKey) return;}
-            if(requiresPack){if(!con.hasPack) return;}
-            GetComponent<SpriteRenderer>().sprite = altSprite;
-        }
 
         var dialog = new List<DialogData>();
 
@@ -132,6 +126,13 @@ public class Interactable : MonoBehaviour
         hasBeenClicked = true;
         if(con.hasPack) hasBeenClickedWithPack = true;
         if(con.hasKey) hasBeenClickedWithKey = true;
+        
+        if (altSprite != null)
+        {
+            if(requiresKey){if(!con.hasKey) return;}
+            if(requiresPack){if(!con.hasPack) return;}
+            GetComponent<SpriteRenderer>().sprite = altSprite;
+        }
     }
 
 }
