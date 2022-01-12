@@ -1,0 +1,24 @@
+1. Define Item Progession throughout Game4
+    -> what is expected to be caught when?
+    -> what could be discovered beforehand?
+
+2. Set "Plot walls"
+ -> Create logical and game defined barriers keeping players
+    seamlessly from progression to far without hindering exploration
+
+3. Limit options to a minimum
+    -> Branching creates depth, ensure ends tie back into 
+        main as fast as possible. 
+    -> Spread content throughout time intervalls and Scenes.
+
+
+? use Sates for character interactions?
+
+Create flow charting tool for dialogue options????
+
+
+
+Text interaction logic: 
+    Progression indicator
+    Enum linked to key items?
+    
