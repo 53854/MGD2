@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311992, g: 0.38074034, b: 0.35872713, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -986,6 +986,183 @@ PrefabInstance:
     - target: {fileID: 7688493618373987074, guid: d13f173a037faed4485c074419f69537, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7688493618373987101, guid: d13f173a037faed4485c074419f69537, type: 3}
+      propertyPath: lines.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7688493618373987101, guid: d13f173a037faed4485c074419f69537, type: 3}
+      propertyPath: alt_lines.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7688493618373987101, guid: d13f173a037faed4485c074419f69537, type: 3}
+      propertyPath: lines.Array.data[0].text
+      value: /sound:ashleyhihi/Oh, h-hey...
+      objectReference: {fileID: 0}
+    - target: {fileID: 7688493618373987101, guid: d13f173a037faed4485c074419f69537, type: 3}
+      propertyPath: lines.Array.data[1].text
+      value: Hey, wie geht's dir?
+      objectReference: {fileID: 0}
+    - target: {fileID: 7688493618373987101, guid: d13f173a037faed4485c074419f69537, type: 3}
+      propertyPath: lines.Array.data[2].text
+      value: Gut, danke! Ich habe gehoert, dass Hank einen Auftrag fuer dich hat.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7688493618373987101, guid: d13f173a037faed4485c074419f69537, type: 3}
+      propertyPath: lines.Array.data[3].text
+      value: Kann ich dir da irgendwie behilflich sein?
+      objectReference: {fileID: 0}
+    - target: {fileID: 7688493618373987101, guid: d13f173a037faed4485c074419f69537, type: 3}
+      propertyPath: lines.Array.data[4].text
+      value: Danke, aber keine Sorge, es ist nur ein Lieferauftrag. Ist im Handumdrehen
+        erledigt!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7688493618373987101, guid: d13f173a037faed4485c074419f69537, type: 3}
+      propertyPath: lines.Array.data[5].text
+      value: Okay, das hoert sich doch gut an. Pass trotzdem auf dich auf.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7688493618373987101, guid: d13f173a037faed4485c074419f69537, type: 3}
+      propertyPath: lines.Array.data[6].text
+      value: /size:up/Hey, keine Zeit zum flirten! Schwing die Knochen!/size:init/
+      objectReference: {fileID: 0}
+    - target: {fileID: 7688493618373987101, guid: d13f173a037faed4485c074419f69537, type: 3}
+      propertyPath: lines.Array.data[7].text
+      value: /sound:ashleyhihi/Wir hoeren uns spaeter.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7688493618373987101, guid: d13f173a037faed4485c074419f69537, type: 3}
+      propertyPath: lines.Array.data[0].speaker
+      value: Ashley
+      objectReference: {fileID: 0}
+    - target: {fileID: 7688493618373987101, guid: d13f173a037faed4485c074419f69537, type: 3}
+      propertyPath: lines.Array.data[1].speaker
+      value: Protag-Kun
+      objectReference: {fileID: 0}
+    - target: {fileID: 7688493618373987101, guid: d13f173a037faed4485c074419f69537, type: 3}
+      propertyPath: lines.Array.data[2].speaker
+      value: Ashley
+      objectReference: {fileID: 0}
+    - target: {fileID: 7688493618373987101, guid: d13f173a037faed4485c074419f69537, type: 3}
+      propertyPath: lines.Array.data[3].speaker
+      value: Ashley
+      objectReference: {fileID: 0}
+    - target: {fileID: 7688493618373987101, guid: d13f173a037faed4485c074419f69537, type: 3}
+      propertyPath: lines.Array.data[4].speaker
+      value: Protag-Kun
+      objectReference: {fileID: 0}
+    - target: {fileID: 7688493618373987101, guid: d13f173a037faed4485c074419f69537, type: 3}
+      propertyPath: lines.Array.data[5].speaker
+      value: Ashley
+      objectReference: {fileID: 0}
+    - target: {fileID: 7688493618373987101, guid: d13f173a037faed4485c074419f69537, type: 3}
+      propertyPath: lines.Array.data[6].speaker
+      value: Hank
+      objectReference: {fileID: 0}
+    - target: {fileID: 7688493618373987101, guid: d13f173a037faed4485c074419f69537, type: 3}
+      propertyPath: lines.Array.data[7].speaker
+      value: Ashley
+      objectReference: {fileID: 0}
+    - target: {fileID: 7688493618373987101, guid: d13f173a037faed4485c074419f69537, type: 3}
+      propertyPath: alt_lines.Array.data[0].text
+      value: /sound:ashleyhihi/Wir hoeren uns spaeter.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7688493618373987101, guid: d13f173a037faed4485c074419f69537, type: 3}
+      propertyPath: lines.Array.data[1].isPlayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7688493618373987101, guid: d13f173a037faed4485c074419f69537, type: 3}
+      propertyPath: lines.Array.data[4].isPlayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7688493618373987101, guid: d13f173a037faed4485c074419f69537, type: 3}
+      propertyPath: lines.Array.data[5].isPlayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7688493618373987101, guid: d13f173a037faed4485c074419f69537, type: 3}
+      propertyPath: lines.Array.data[6].isPlayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7688493618373987101, guid: d13f173a037faed4485c074419f69537, type: 3}
+      propertyPath: playerHasKey_lines.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7688493618373987101, guid: d13f173a037faed4485c074419f69537, type: 3}
+      propertyPath: playerHasPack_lines.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7688493618373987101, guid: d13f173a037faed4485c074419f69537, type: 3}
+      propertyPath: alt_lines.Array.data[0].speaker
+      value: Ashley
+      objectReference: {fileID: 0}
+    - target: {fileID: 7688493618373987101, guid: d13f173a037faed4485c074419f69537, type: 3}
+      propertyPath: lines.Array.data[0].isSkippable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7688493618373987101, guid: d13f173a037faed4485c074419f69537, type: 3}
+      propertyPath: lines.Array.data[1].isSkippable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7688493618373987101, guid: d13f173a037faed4485c074419f69537, type: 3}
+      propertyPath: lines.Array.data[2].isSkippable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7688493618373987101, guid: d13f173a037faed4485c074419f69537, type: 3}
+      propertyPath: lines.Array.data[3].isSkippable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7688493618373987101, guid: d13f173a037faed4485c074419f69537, type: 3}
+      propertyPath: lines.Array.data[4].isSkippable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7688493618373987101, guid: d13f173a037faed4485c074419f69537, type: 3}
+      propertyPath: lines.Array.data[5].isSkippable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7688493618373987101, guid: d13f173a037faed4485c074419f69537, type: 3}
+      propertyPath: lines.Array.data[6].isSkippable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7688493618373987101, guid: d13f173a037faed4485c074419f69537, type: 3}
+      propertyPath: lines.Array.data[7].isSkippable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7688493618373987101, guid: d13f173a037faed4485c074419f69537, type: 3}
+      propertyPath: alt_playerHasPack_lines.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7688493618373987101, guid: d13f173a037faed4485c074419f69537, type: 3}
+      propertyPath: alt_lines.Array.data[0].isSkippable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7688493618373987101, guid: d13f173a037faed4485c074419f69537, type: 3}
+      propertyPath: playerHasPack_lines.Array.data[0].text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7688493618373987101, guid: d13f173a037faed4485c074419f69537, type: 3}
+      propertyPath: playerHasPack_lines.Array.data[1].text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7688493618373987101, guid: d13f173a037faed4485c074419f69537, type: 3}
+      propertyPath: playerHasPack_lines.Array.data[2].text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7688493618373987101, guid: d13f173a037faed4485c074419f69537, type: 3}
+      propertyPath: playerHasPack_lines.Array.data[3].text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7688493618373987101, guid: d13f173a037faed4485c074419f69537, type: 3}
+      propertyPath: playerHasPack_lines.Array.data[4].text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7688493618373987101, guid: d13f173a037faed4485c074419f69537, type: 3}
+      propertyPath: playerHasPack_lines.Array.data[5].text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7688493618373987101, guid: d13f173a037faed4485c074419f69537, type: 3}
+      propertyPath: playerHasPack_lines.Array.data[6].text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7688493618373987101, guid: d13f173a037faed4485c074419f69537, type: 3}
+      propertyPath: playerHasPack_lines.Array.data[7].text
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7688493618373987102, guid: d13f173a037faed4485c074419f69537, type: 3}
       propertyPath: m_Name
