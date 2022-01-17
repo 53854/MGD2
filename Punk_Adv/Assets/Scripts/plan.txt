@@ -21,4 +21,3 @@ Create flow charting tool for dialogue options????
 Text interaction logic: 
     Progression indicator
     Enum linked to key items?
-    
