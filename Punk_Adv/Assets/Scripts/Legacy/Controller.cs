@@ -1,34 +1,42 @@
 using System.Collections;
 using System.Collections.Generic;
+using Doublsb.Dialog;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using Doublsb.Dialog;
 
 public class Controller : MonoBehaviour
 {
     [Header("Scene Reference")]
     public DialogManager dialogManager;
+
     public GameObject player;
 
     [Header("MouseCoords")]
     public Vector3 mousePos;
+
     public Vector3 mousePosWorld;
+
     public Vector2 mousePosWorld2D;
 
+    public Vector2 playerPosV2;
 
     [Header("Movement")]
     [Range(0.0f, 3.0f)]
     public float scale = 2.0f;
+
     [Range(0.0f, 3.0f)]
     public float speed;
+
     public bool isMoving;
+
     public bool isInteracting = false;
+
     public Vector2 targetPos;
 
     [Header("Inventory")]
     public bool hasPack = false;
-    public bool hasKey = false;
 
+    public bool hasKey = false;
 
     RaycastHit2D hit;
 
@@ -43,7 +51,10 @@ public class Controller : MonoBehaviour
     {
         player.GetComponent<Animator>().SetBool("isWalking", isMoving);
 
-        if (Input.GetMouseButtonDown(0) && dialogManager.state == State.Deactivate)
+        if (
+            Input.GetMouseButtonDown(0) &&
+            dialogManager.state == State.Deactivate
+        )
         {
             mousePos = Input.mousePosition;
 
@@ -51,7 +62,6 @@ public class Controller : MonoBehaviour
 
             mousePosWorld2D = new Vector2(mousePosWorld.x, mousePosWorld.y);
             hit = Physics2D.Raycast(mousePosWorld2D, Vector2.zero);
-
 
             if (hit.collider != null)
             {
@@ -65,15 +75,15 @@ public class Controller : MonoBehaviour
                     isMoving = true;
                     isInteracting = false;
                     CheckSpriteFlip();
-                }
-                // Abfrage ob es der Schlüssel ist
+                } // Abfrage ob es der Schlüssel ist
                 else if (tag == "Interactable")
                 {
                     isInteracting = true;
                 }
                 else if (tag == "Character")
                 {
-                    dialogManager.Show(hitObject.GetComponent<NPC>().GetDialogData());
+                    dialogManager
+                        .Show(hitObject.GetComponent<NPC>().GetDialogData());
                 }
             }
             else
@@ -81,46 +91,50 @@ public class Controller : MonoBehaviour
                 isInteracting = false;
             }
         }
-
     }
 
     private void FixedUpdate()
     {
-        // Player movement and scaling
+        // Check if player has to move
+        playerPosV2 = player.transform.position;
+        if (playerPosV2 == targetPos)
+        {
+            isMoving = false;
+        }
+
+        // Player movement
         if (isMoving && dialogManager.state == State.Deactivate)
         {
+            // Move Player
+            player.transform.position =
+                Vector3
+                    .MoveTowards(player.transform.position, targetPos, speed);
 
-            // Scale Player according to y position 
-            if (player.transform.position.y < 25)
-            {
-                float y_scale = 34 / (player.transform.position.y + 17);
-                player.transform.localScale = new Vector3(y_scale, y_scale, y_scale);
-            }
-
-            // Move Player and flip the visual representation if he is facing left
-            player.transform.position = Vector3.MoveTowards(player.transform.position, targetPos, speed);
+            //flip the visual representation if he is facing left
             CheckSpriteFlip();
+        }
 
-            // Stop moving if player is close enough to taget position
-            if (player.transform.position.x == targetPos.x && player.transform.position.y == targetPos.y)
-            {
-                isMoving = false;
-            }
+        // Scale Player according to y position in 2D Scene
+        if (player.transform.position.y < 25)
+        {
+            float y_scale = 34 / (player.transform.position.y + 17);
+            player.transform.localScale =
+                new Vector3(y_scale, y_scale, y_scale);
         }
     }
 
+    // Flips the character sprite if he is facing left
     void CheckSpriteFlip()
     {
         if (player.transform.position.x > targetPos.x)
         {
-            // Nach links blicken
+            // Face left
             player.GetComponent<SpriteRenderer>().flipX = true;
         }
         else
         {
-            // Nach rechts blicken
+            // Face right
             player.GetComponent<SpriteRenderer>().flipX = false;
         }
     }
-
 }
